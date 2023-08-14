@@ -18,3 +18,19 @@ def categorize_interests(interests, blog_categories):
                 break
 
     return categorized_interests
+
+
+def convert_to_dict_of_lists(input_list):
+    result_dict = {}
+    current_category = None
+
+    for item in input_list:
+        if item.startswith('Category'):
+            current_category = item.replace('Category ', '').split(': ')[1].strip()
+            result_dict[current_category] = []
+        elif item.startswith('Keywords'):
+            keywords = item.replace('Keywords ', '').split(': ')[1].strip()
+            result_dict[current_category] = [keyword.strip() for keyword in keywords.split(', ')]
+
+    return result_dict
+

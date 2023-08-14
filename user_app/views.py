@@ -1,3 +1,5 @@
+import os
+
 import openai
 import pandas as pd
 from ipware import get_client_ip
@@ -7,7 +9,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from neo4j import GraphDatabase
 from .models import Profile, UserAgentLog
-from .service import get_geo_location
+from .service import get_geo_location, convert_to_dict_of_lists
 import platform
 
 
@@ -17,6 +19,9 @@ def api_handler(request):
         data = json.loads(request.body)
         name = data.get('name')
         link = data.get('link')
+        u_id = data.get('unique_id')
+        phone = data.get('phone')
+        email = data.get('email')
         # blog_categories = data.get('category')
 
         # Save the name and link to the database
@@ -24,10 +29,14 @@ def api_handler(request):
         pro = [p.name for p in pr]
         print(pro)
         # Profile.objects.all().delete()
-        file_path = f"/Users/sancharika/PycharmProjects/giggr1/data/profile_data_{name}.json"
+        current_directory = os.getcwd()
+
+        # Combine the current directory with the 'data' folder name to get the path
+        data_folder_path = os.path.join(current_directory, 'data')
+        file_path = f"{data_folder_path}/profile_data_{name}.json"
         exist = Profile.objects.filter(name=name).first()
         if exist is None:
-            profile = Profile(name=name, link=link)
+            profile = Profile(name=name, link=link, u_id=u_id)
             profile.save()
             print("name: " + profile.name)
             api_endpoint = 'https://nubela.co/proxycurl/api/v2/linkedin'
@@ -43,10 +52,11 @@ def api_handler(request):
             json_data = json.load(json_file)
 
         # Access the 'full_name' attribute from the JSON data
+        print(file_path)
         full_name = json_data['full_name']
 
         # Execute the Neo4j Cypher query
-        uri = "bolt://localhost:7687/giggr"
+        uri = "bolt://localhost:7687/neo4j"
         username = "neo4j"
         password = "sancharika"
 
@@ -60,10 +70,12 @@ def api_handler(request):
             cypher_query = f'''
                 WITH '{file_path}' AS url
                 CALL apoc.load.json(url) YIELD value AS personData
-                MERGE (p:Person {{name: personData.full_name}})
+                MERGE (p:Person {{name: personData.full_name , unique_id: {u_id}}})
 SET p.country = personData.country,
 p.occupation = personData.occupation,
 p.city = personData.city,
+p.email = {email},
+p.phone = {phone},
 p.gender = personData.gender,
 p.state = personData.state,
 p.follower_count = personData.follower_count,
@@ -322,7 +334,13 @@ MERGE (p)<-[:RECOMMENDED {{message: recommendationMessage}}]-(personB)
             interests.append(df2[df2["name"] == full_name]["interest"].values[0])
             openai.api_key = "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"
             message = [{"role": "user", "content": f"""{interests}
-            as per this list find all the categories that this user might be interested in based on rank
+            as per this sentence find all the categories that this user might be interested in and also show the 
+            keywords based on which it is categorised in a format->
+Category 1:  
+Keywords 1:
+Category 2:  
+Keywords 2: 
+and so on  
             """}]
             response = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo-0613",
@@ -334,17 +352,17 @@ MERGE (p)<-[:RECOMMENDED {{message: recommendationMessage}}]-(personB)
                 presence_penalty=0
             )
             keywords_string = response.choices[0].message['content']
-            lines = keywords_string.split('\n')
-            try:
-                lines = [line.strip() for line in lines if line.strip()]
-            except Exception as e:
-                str(e)
-                lines = [keyword.strip().lstrip('- ') for keyword in lines if keyword.strip()]
+            keywords_list = keywords_string.split('\n')
+            # try:
+            #     lines = [line.strip() for line in lines if line.strip()]
+            # except Exception as e:
+            #     str(e)
+            #     lines = [keyword.strip().lstrip('- ') for keyword in lines if keyword.strip()]
 
-            print(lines)
-            # Extract keywords from lines excluding the serial numbers
-            keywords = [line.split('. ')[1] for line in lines[2:]]
-            return JsonResponse({"interested_categories": list(set(keywords))})
+            result_dict = convert_to_dict_of_lists(keywords_list)
+
+            print(keywords_list)
+            return JsonResponse({"interested_categories": result_dict})
 
         except KeyError as e:
             print("Error while processing DataFrame:", e)
@@ -357,7 +375,7 @@ def my_view(request):
     user_agent = request.META.get('HTTP_USER_AGENT', '')
 
     # Save the user agent data to the database
-    us = UserAgentLog.objects.filter(user_agent=user_agent).first()
+    us = UserAgentLog.objects.create(user_agent=user_agent)
     add = request.META['REMOTE_ADDR']
     r = request.META.get('HTTP_REFERER', 'Unknown')
     lang = request.META.get('HTTP_ACCEPT_LANGUAGE', 'en')
