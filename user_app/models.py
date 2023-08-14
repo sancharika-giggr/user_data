@@ -6,6 +6,7 @@ from django.db import models
 
 class Profile(models.Model):
     name = models.CharField(max_length=100)
+    u_id = models.CharField(max_length=16, unique=True, null=False, blank=False)
     link = models.URLField()
 
 
