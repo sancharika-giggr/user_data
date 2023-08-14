@@ -1,0 +1,555 @@
+{
+  "public_identifier": "sancharika-debnath",
+  "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/sancharika-debnath/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230809%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230809T091217Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=577d0cd916bf6e1ed12f307897cb2a502a9ac7fca2bfb204d6f499a45df944f5",
+  "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/sancharika-debnath/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230809%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230809T091217Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=37f78d9f5bb9da851a2416e195d32e4a1f525431a50be0830f1e49dc42137d3b",
+  "first_name": "Sancharika",
+  "last_name": "Debnath",
+  "full_name": "Sancharika Debnath",
+  "follower_count": 649,
+  "occupation": "Data Science Intern at A.P. Moller - Maersk",
+  "headline": "Machine Learning Enthusiast || Data Science Practitioner",
+  "summary": "Hello, I'm Sancharika Debnath, a passionate and results-driven data scientist with a strong background in information technology. Currently pursuing a Bachelor of Technology degree in Information Technology from Kalinga Institute of Industrial Technology, I am set to graduate in 2023 with a CGPA of 8.83.\n\nThroughout my academic journey, I have gained knowledge in various tech stack such as Python, C++, R, Java, Next.JS, Django and SpringBoot, as well as frameworks including Sci-Kit, Keras, TensorFlow, PyTorch, and OpenCV. I have hands-on experience in machine learning, deep learning, computer vision, and data visualization using tools like Tableau and Plotly. And trying to learn other technologies.\n\nIn terms of professional experience, I have had the opportunity to work as a Data Science Intern at Maersk Global Service Centres, where I successfully projects involving web development and data science, at HighRadius Corporation, I gained practical experience working with real-world data.\n\nI am proud of my project accomplishments. Furthermore, I have actively contributed to the field through my publication on Hyperspectral Image Compression and Classification, where I employed CNN AutoEncoder and HybridSN for compression and classification tasks.\n\nIn addition to my technical expertise, I possess strong soft skills such as teamwork, quick learning, problem-solving, work ethic, and versatility. I thrive in collaborative environments and am committed to delivering high-quality results.\n\nI am now seeking new opportunities to apply my skills and contribute to impactful projects in the field of data science. Feel free to reach out to me for collaboration, networking, or discussing potential opportunities.\n\nLet's connect and explore the possibilities of working together!",
+  "country": "IN",
+  "country_full_name": "India",
+  "city": "Kolkata",
+  "state": "West Bengal",
+  "experiences": [
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 7,
+        "year": 2022
+      },
+      "ends_at": {
+        "day": 28,
+        "month": 2,
+        "year": 2023
+      },
+      "company": "A.P. Moller - Maersk",
+      "company_linkedin_profile_url": "https://in.linkedin.com/company/maersk-group",
+      "title": "Data Science Intern",
+      "description": "Worked on various data science related and web development related real life projects.\n\u2022 Created an end-to-end web application for pre-booking seats in office premises using springboot,\nnext.js and internal UI developer, Anchor UI.\n\u2022 Clustering of ports based on predominant features using different clustering techniques ( Best\nModel : Gaussian Mixture ).\n\u2022 Prediction of container turn time considering time series effects of the data.\n\u2022 Prediction of change in attachment ratio percentage using various AutoML ( Best Model :\nFLAML).\n            \n\n    \n    \n\n    \n        Show less",
+      "location": "Bengaluru, Karnataka, India",
+      "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/maersk-group/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230809%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230809T091217Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=218ab3a9d6f2f9c4164a04c061495f03f02b5456ea234be9cae2c0dfb4ccb1b9"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 1,
+        "year": 2022
+      },
+      "ends_at": {
+        "day": 30,
+        "month": 4,
+        "year": 2022
+      },
+      "company": "HighRadius",
+      "company_linkedin_profile_url": "https://in.linkedin.com/company/highradius",
+      "title": "Data Sceince Intern",
+      "description": "Developed an Automation invoice prediction system.\n\u2022 Using machine learning algorithms (Best Model: XGBoost) for prediction of invoice clearance\ndate.\n\u2022 JDBC, and React JS was used on a real world transaction database for an interactive web page.\n(Accuracy: 76.15)",
+      "location": "Bhubaneswar, Odisha, India",
+      "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/highradius/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230809%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230809T091217Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=5cd936d9ebd7576eb60179e84a8d890b4be59d8e966d78ae36d45e80bd66594f"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 7,
+        "year": 2021
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 8,
+        "year": 2021
+      },
+      "company": "The Sparks Foundation",
+      "company_linkedin_profile_url": "https://in.linkedin.com/company/the-sparks-foundation",
+      "title": "Data Science  & Business Analytics Intern",
+      "description": "\u2022 Prediction of student performance Using Supervised Machine Learning Algorithm\n\u2022 Achieved accuracy rate of 95.5",
+      "location": null,
+      "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/the-sparks-foundation/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230809%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230809T091217Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=edf757a7dfdcc6113a8c686d58cbc02acc2d77a179326382e916b4c258525022"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 6,
+        "year": 2021
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 7,
+        "year": 2021
+      },
+      "company": "Ativeer Tech",
+      "company_linkedin_profile_url": "https://in.linkedin.com/company/ativeer-tech",
+      "title": "Data Science Intern",
+      "description": "\u2022 Product appending in the website back-end\n\u2022 Used WordPress and Wix to represent product details for more than 150+ products",
+      "location": null,
+      "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/ativeer-tech/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230809%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230809T091217Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=bb055bc014d8412b63508fad699fadf67407db3554fcee0a9069e25d7d03fd55"
+    }
+  ],
+  "education": [
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 1,
+        "year": 2019
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 12,
+        "year": 2023
+      },
+      "field_of_study": "Information Technology",
+      "degree_name": "4th, year",
+      "school": "Kalinga Institute of Industrial Technology, Bhubaneswar",
+      "school_linkedin_profile_url": "https://in.linkedin.com/school/kalinga-institute-of-industrial-technology-bhubaneswar/",
+      "description": null,
+      "logo_url": "https://media.licdn.com/dms/image/C560BAQE4UC9Z_k3c7A/company-logo_100_100/0/1579422507409?e=2147483647&v=beta&t=rOMug2VuB4xMuhSTL-oZxf2Z_HkrSrv1cj7TODQqVBI",
+      "grade": "8.83 CGPA",
+      "activities_and_societies": null
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 1,
+        "year": 2017
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 12,
+        "year": 2019
+      },
+      "field_of_study": "Actuarial Science",
+      "degree_name": "STUDENT",
+      "school": "Kendriya Vidyalaya ballygunge",
+      "school_linkedin_profile_url": null,
+      "description": null,
+      "logo_url": null,
+      "grade": null,
+      "activities_and_societies": null
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 1,
+        "year": 2007
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 12,
+        "year": 2019
+      },
+      "field_of_study": null,
+      "degree_name": null,
+      "school": "Kendriya Vidyalaya",
+      "school_linkedin_profile_url": "https://in.linkedin.com/school/kendriya-vidyalaya/",
+      "description": null,
+      "logo_url": "https://media.licdn.com/dms/image/C4E0BAQFiB3Otc6s1Mw/company-logo_100_100/0/1519897001940?e=2147483647&v=beta&t=8XpmyRbVi-e3ePsqdUTSmKlXN8RDViHRS8GqpGQ-3mw",
+      "grade": null,
+      "activities_and_societies": "Chess, drawing, taekwondo,skit"
+    }
+  ],
+  "languages": [],
+  "accomplishment_organisations": [],
+  "accomplishment_publications": [],
+  "accomplishment_honors_awards": [],
+  "accomplishment_patents": [],
+  "accomplishment_courses": [
+    {
+      "name": "ARTIFICAL INTELLIGENCE",
+      "number": "-"
+    },
+    {
+      "name": "JAVASCRIPT",
+      "number": "-"
+    },
+    {
+      "name": "MACHINE LEARNING",
+      "number": "-"
+    }
+  ],
+  "accomplishment_projects": [
+    {
+      "starts_at": null,
+      "ends_at": null,
+      "title": "Cats vs Dogs Classification",
+      "description": "Dog and Cat Classification\nGraphical user interface for Cats vs Dogs Classification (with 98.7% Accuracy) using Keras Sequential API",
+      "url": "https://github.com/sancharika/Dog-Cat-Classification"
+    },
+    {
+      "starts_at": null,
+      "ends_at": null,
+      "title": "Object Identifier",
+      "description": "Web application for Object Identification using ResNet50\n\nA web application where one can upload image as per ones wish and application will response with what are the object present in the image using the imagenet classification of predefined models.",
+      "url": "https://github.com/sancharika/Object_identifier"
+    },
+    {
+      "starts_at": null,
+      "ends_at": null,
+      "title": "Sentiment Analyzer",
+      "description": "Sentiment analysis from social media reviews (tweets) using NLP.",
+      "url": "https://github.com/sancharika/Sentiment-Analyzer"
+    }
+  ],
+  "accomplishment_test_scores": [],
+  "volunteer_work": [],
+  "certifications": [
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 3,
+        "year": 2022
+      },
+      "ends_at": null,
+      "name": "Engineering Virtual Program",
+      "license_number": null,
+      "display_source": "drive.google.com",
+      "authority": "Goldman Sachs",
+      "url": "https://drive.google.com/file/d/10UXVrd4hnX3TJeK2ItY73r9i7bP1aW_j/view?usp=sharing"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 12,
+        "year": 2021
+      },
+      "ends_at": null,
+      "name": "AWS Machine Learning Engineer Nanodegree",
+      "license_number": "VKCKGTVT",
+      "display_source": "confirm.udacity.com",
+      "authority": "Udacity",
+      "url": "https://confirm.udacity.com/VKCKGTVT"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 11,
+        "year": 2021
+      },
+      "ends_at": null,
+      "name": "Data Structures in C++",
+      "license_number": null,
+      "display_source": "drive.google.com",
+      "authority": "Coding Ninjas",
+      "url": "https://drive.google.com/file/d/1LGZRG6Y-iZZ4MdWC6Uz4zx9FLIRuXUTN/view?usp=sharing"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 10,
+        "year": 2021
+      },
+      "ends_at": null,
+      "name": "AWS Machine Learning Foundation",
+      "license_number": "LLZYKEDW",
+      "display_source": "confirm.udacity.com",
+      "authority": "Udacity",
+      "url": "https://confirm.udacity.com/LLZYKEDW"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 10,
+        "year": 2021
+      },
+      "ends_at": null,
+      "name": "Problem Solving (Basic)",
+      "license_number": "a8a57a88589e",
+      "display_source": "www.hackerrank.com",
+      "authority": "HackerRank",
+      "url": "https://www.hackerrank.com/certificates/a8a57a88589e"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 10,
+        "year": 2021
+      },
+      "ends_at": null,
+      "name": "Problem Solving (Intermediate)",
+      "license_number": "1927b82b34ae",
+      "display_source": "www.hackerrank.com",
+      "authority": "HackerRank",
+      "url": "https://www.hackerrank.com/certificates/1927b82b34ae"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 8,
+        "year": 2021
+      },
+      "ends_at": null,
+      "name": "Introduction to C++",
+      "license_number": null,
+      "display_source": "drive.google.com",
+      "authority": "Coding Ninjas",
+      "url": "https://drive.google.com/file/d/1b8NZcMbivazpXQ-4j27ebi439kunjbND/view?usp=sharing"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 7,
+        "year": 2021
+      },
+      "ends_at": null,
+      "name": "Machine Learning",
+      "license_number": "2714278",
+      "display_source": "drive.google.com",
+      "authority": "Simplilearn",
+      "url": "https://drive.google.com/file/d/1Gn-PRLiJ80Nrv_-G2fXaPKMIegkOSdq7/view?usp=sharing"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 6,
+        "year": 2021
+      },
+      "ends_at": null,
+      "name": "Machine Learning",
+      "license_number": "UC-e74e2519-18fa-47c5-8115-a5f7ed82c6c6",
+      "display_source": "www.udemy.com",
+      "authority": "Udemy",
+      "url": "https://www.udemy.com/certificate/UC-e74e2519-18fa-47c5-8115-a5f7ed82c6c6/"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 6,
+        "year": 2021
+      },
+      "ends_at": null,
+      "name": "Python For Data Science",
+      "license_number": "eec120fccbe14ddfa17c990c52aea035",
+      "display_source": "courses.cognitiveclass.ai",
+      "authority": "IBM",
+      "url": "https://courses.cognitiveclass.ai/certificates/eec120fccbe14ddfa17c990c52aea035"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 3,
+        "year": 2022
+      },
+      "ends_at": {
+        "day": 28,
+        "month": 2,
+        "year": 2023
+      },
+      "name": "Microsoft Azure AI Fundamentals",
+      "license_number": "992267690",
+      "display_source": "www.credly.com",
+      "authority": "Microsoft",
+      "url": "https://www.credly.com/badges/e01c4ae6-4477-47d6-b698-f6e7eb6120e0"
+    }
+  ],
+  "connections": 500,
+  "people_also_viewed": [
+    {
+      "link": "https://in.linkedin.com/in/biyatra-ghosh-b14128208",
+      "name": "Biyatra Ghosh",
+      "summary": "Former Data Analyst Intern At HighRadius Corporation",
+      "location": "Kolkata"
+    },
+    {
+      "link": "https://in.linkedin.com/in/mehbul-islam-a7057a216",
+      "name": "Mehbul Islam",
+      "summary": "Data Science Enthusiast \u2022 Student \u2022",
+      "location": "Prayagraj"
+    },
+    {
+      "link": "https://in.linkedin.com/in/smitangshuchakraborty",
+      "name": "Smitangshu Chakraborty",
+      "summary": "Software Dev Engr Grad @ CSG | KIIT'23",
+      "location": "Kolkata"
+    },
+    {
+      "link": "https://in.linkedin.com/in/dishantarya9479",
+      "name": "Dishant Arya",
+      "summary": "SDE Intern @Chaayos || Software Developer",
+      "location": "Bhubaneswar"
+    },
+    {
+      "link": "https://in.linkedin.com/in/ashna-biswal-6a9824212",
+      "name": "ASHNA BISWAL",
+      "summary": "Intern at Bajaj Finserv",
+      "location": "Bhubaneswar"
+    },
+    {
+      "link": "https://in.linkedin.com/in/prajakta-suryavanshi-329b2767",
+      "name": "Prajakta Suryavanshi",
+      "summary": "Senior Data Scientist| Machine learning |Java|Python",
+      "location": "Mumbai"
+    },
+    {
+      "link": "https://in.linkedin.com/in/ishika-chakraborty-1958981a9",
+      "name": "Ishika Chakraborty",
+      "summary": "Masters in Marketing Student at Purdue",
+      "location": "Kolkata"
+    },
+    {
+      "link": "https://in.linkedin.com/in/vikash14609",
+      "name": "Vikash K.",
+      "summary": "SDE - I @ BookMyShow | Formerly at A.P Moller Maersk | CFG 2022 Prefinalist by J.P Morgan | Winner Pay-Hack by PhonePe 2022 | Razorpay FTX 2021 finalist | Code Gladiators 2021 Finalist |",
+      "location": "Bhubaneswar"
+    },
+    {
+      "link": "https://in.linkedin.com/in/somrita-dutta",
+      "name": "SOMRITA DUTTA",
+      "summary": "B.Tech @KIIT || Web Developer",
+      "location": "Kolkata"
+    },
+    {
+      "link": "https://in.linkedin.com/in/chhahatahlawat",
+      "name": "Chhahat Ahlawat",
+      "summary": "Product Manager @ Sprinklr | ex Macquarie Group | NSIT",
+      "location": "Delhi, India"
+    },
+    {
+      "link": "https://in.linkedin.com/in/swarnima-suman-358b2a1b9",
+      "name": "Swarnima Suman",
+      "summary": "Associate Software Engineer-1 at High Radius || Full-Stack Web Developer || KIIT'22 CSE\ud83c\udf93",
+      "location": "Hyderabad"
+    },
+    {
+      "link": "https://in.linkedin.com/in/sohampradhan7",
+      "name": "Soham Pradhan",
+      "summary": "Intern  @Johnson Controls | KIIT'23",
+      "location": "Kolkata metropolitan area"
+    },
+    {
+      "link": "https://in.linkedin.com/in/sakshi-singh-5692aa202",
+      "name": "SAKSHI SINGH",
+      "summary": "Software Engineering Trainee @ CGI , KIIT'23",
+      "location": "Siwan"
+    },
+    {
+      "link": "https://in.linkedin.com/in/debraj-samal-a48b961b0",
+      "name": "Debraj Samal",
+      "summary": "SDE @CSG || KIIT'23",
+      "location": "Gurugram"
+    },
+    {
+      "link": "https://in.linkedin.com/in/koushik-mondal-929b411b1",
+      "name": "Koushik Mondal",
+      "summary": "SDE @ A.P. Moller - Maersk | MERN",
+      "location": "Kolkata"
+    },
+    {
+      "link": "https://in.linkedin.com/in/abhishekraj272",
+      "name": "Abhishek R.",
+      "summary": "SDE at Swiggy",
+      "location": "Bengaluru"
+    },
+    {
+      "link": "https://in.linkedin.com/in/yuthika-khedwal-a05818208",
+      "name": "Yuthika Khedwal",
+      "summary": "Software Engineer at JPMorgan Chase & Co.",
+      "location": "Bengaluru"
+    },
+    {
+      "link": "https://in.linkedin.com/in/aleena-akhtar-1680761a5",
+      "name": "Aleena Akhtar",
+      "summary": "Salesforce Intern @ A.P. Moller- Maersk | BTech 2023",
+      "location": "Patna"
+    },
+    {
+      "link": "https://in.linkedin.com/in/saatwikr",
+      "name": "Saatwik Rishi",
+      "summary": "SWE Intern @McKinsey and Company | Ex App Dev Lead @Microsoft Student Community KiiT",
+      "location": "Delhi, India"
+    },
+    {
+      "link": "https://in.linkedin.com/in/shreyan-datta-gupta-a8642b1a9",
+      "name": "Shreyan Datta Gupta",
+      "summary": "KIIT University '23, Upcoming Associate SDE at BGSW",
+      "location": "Kolkata"
+    }
+  ],
+  "recommendations": [
+    "Vinayak Singh\n\n      \n          \n          \n\n\n\n              \n                \n        \n              \n  \n\n      \n          We\u2019ve joined our hands on several projects, and Sancharika is one of the best people I had as a partner. I highly recommend her expertise to any person looking for an ML engineer. She is the most profound person I have met, and her ability to tackle any problem is remarkable and with a warm smile. Sancharika debnath would become an appreciated member of any team"
+  ],
+  "activities": [
+    {
+      "title": "Google new Quantum Computer can complete 47 years of computing tasks in just 6 seconds.This is a 70 qubit quantum computer. It's 241 million\u2026",
+      "link": "https://www.linkedin.com/posts/sebastianbarros_quantumcomputing-activity-7084512552679870464-38o2",
+      "activity_status": "Liked by Sancharika Debnath"
+    },
+    {
+      "title": "Ritikha Gupta said of her KIIT experiences, \"School of Computer Engineering, KIIT DU continuing mentorship enabled me to bag this huge\u2026",
+      "link": "https://www.linkedin.com/posts/computer-kiit_computerkiit-corebranch-kiit-activity-7085203386190467072-aU3J",
+      "activity_status": "Liked by Sancharika Debnath"
+    },
+    {
+      "title": "I\u2019m happy to share that I\u2019m starting a new position as Software Developer at GE HealthCare! \ud83d\ude80#healthcare #softwaredeveloper #firstjob #sde\u2026",
+      "link": "https://www.linkedin.com/posts/vinayak660_healthcare-softwaredeveloper-firstjob-activity-7080990390102724608-2PpZ",
+      "activity_status": "Liked by Sancharika Debnath"
+    },
+    {
+      "title": "Hi everyone,My team in Sprinklr is hiring for Product analyst rolesIf you are someone who, \ud83d\udcc8 Has a Growth mindset\ud83d\udc9b Is passionate about\u2026",
+      "link": "https://www.linkedin.com/posts/chhahatahlawat_hiring-hiringalert-product-activity-7074637643979849728-YURi",
+      "activity_status": "Liked by Sancharika Debnath"
+    },
+    {
+      "title": "Hi connections,I am thrilled to announce that I have landed my first job as a full stack developer at Optum! I am excited to apply my skills and\u2026",
+      "link": "https://www.linkedin.com/posts/pratyush-kumar-jaiswal_hi-connections-i-am-thrilled-to-announce-activity-7056593769353089024-A3mY",
+      "activity_status": "Liked by Sancharika Debnath"
+    },
+    {
+      "title": "Are Vinod Time change Hote Der Nahi Hoti. Believe Nahi Ata To Kar Ke Dekh.....\ud83e\udd78\ud83e\udd78",
+      "link": "https://www.linkedin.com/posts/anish-aman-9457a9147_are-vinod-time-change-hote-der-nahi-hoti-activity-7053333636380536832-RZGz",
+      "activity_status": "Liked by Sancharika Debnath"
+    },
+    {
+      "title": "What it means to \u201cthink outside the box\u201d\u2026\ud83d\udc47\ud83c\udffcWe know that our capacity to envision novel possibilities is the driving force behind genuine\u2026",
+      "link": "https://www.linkedin.com/posts/jayrai_fridayfun-innovation-ai-activity-7052532412492181505-AD6-",
+      "activity_status": "Liked by Sancharika Debnath"
+    },
+    {
+      "title": "School of Computer Engineering, KIIT DU is committed to assisting its students' achievement by guiding their professional development.Let's hear\u2026",
+      "link": "https://www.linkedin.com/posts/computer-kiit_computerkiit-computerengineering-admissions-activity-7051487827074711552-JvXx",
+      "activity_status": "Liked by Sancharika Debnath"
+    },
+    {
+      "title": "Too accurate?#machinelearning #artificialintelligence #engineering #data #datascience #ai #ml",
+      "link": "https://www.linkedin.com/posts/aaryan-dabhade-66b442190_machinelearning-artificialintelligence-activity-7046805286476533760-i0J8",
+      "activity_status": "Liked by Sancharika Debnath"
+    },
+    {
+      "title": "This box of goodies from PwC India Squad just  made my day. Thank you Chelsea Saldanha (She/Her) and Nabhanya Morarji for this sweet gesture.In\u2026",
+      "link": "https://www.linkedin.com/posts/aayoshi-dutta-77a54a160_pwcproud-pwcindia-pwcindiasquad-activity-7049316137599205376-V3Rc",
+      "activity_status": "Liked by Sancharika Debnath"
+    },
+    {
+      "title": "India is unique. Copy-pasting models from the US, etc, has hardly worked. Paytm's speaker for Indian vendors that reads out payments is one of the\u2026",
+      "link": "https://www.linkedin.com/posts/nithin-kamath-81136242_how-tiny-cheap-smart-speakers-unlocked-the-activity-7049623286036529152--e0f",
+      "activity_status": "Liked by Sancharika Debnath"
+    },
+    {
+      "title": "A new employee wasn\u2019t working out after 2 months.We were ready to fire her. \ud83d\udea9 She was underperforming in her role.\ud83d\udea9 Asking basic questions\u2026",
+      "link": "https://www.linkedin.com/posts/a-new-employee-wasnt-working-out-after-2-activity-7049044148858834944-xeKW",
+      "activity_status": "Liked by Sancharika Debnath"
+    },
+    {
+      "title": "Hey connections!! Wanted to take a moment to share the real joy and my sincere gratitude to Deloitte for the exhilarating pre-joining goodies.As\u2026",
+      "link": "https://www.linkedin.com/posts/sagarika-deb-00191_deloitted-makeanimpactthatmatters-deloitte-activity-7048649814204436481-QtaO",
+      "activity_status": "Liked by Sancharika Debnath"
+    },
+    {
+      "title": "Happy to share that I've cleared the coveted DP-203 exam! Ending the Friday on a positive note :)DP-203 evaluates an extensive range of data\u2026",
+      "link": "https://www.linkedin.com/posts/dipankan-bandopadhyay_microsoft-certified-azure-data-engineer-activity-7047584174194487298-E7ao",
+      "activity_status": "Liked by Sancharika Debnath"
+    }
+  ],
+  "similarly_named_profiles": [],
+  "articles": [],
+  "groups": [],
+  "skills": [],
+  "inferred_salary": null,
+  "gender": null,
+  "birth_date": null,
+  "industry": null,
+  "extra": null,
+  "interests": [],
+  "personal_emails": [],
+  "personal_numbers": []
+}

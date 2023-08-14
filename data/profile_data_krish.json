@@ -1,0 +1,425 @@
+{
+  "public_identifier": "naikkrish",
+  "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/naikkrish/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230811%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230811T083214Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=8270b1ded3c72eea8283bcc806f0bbcf2c78ecd325a17a45b0f1e58a5d9e9bb1",
+  "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/naikkrish/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230811%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230811T083214Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=13d084cef860f4611bffec9627741625809c393f77ac802939d55353e8e1bf2f",
+  "first_name": "Krish",
+  "last_name": "Naik",
+  "full_name": "Krish Naik",
+  "follower_count": 187787,
+  "occupation": "Co-Founder at iNeuron.ai",
+  "headline": "Co-Founder & CIO at iNeuron.ai Acquired By PhysicsWallah, Youtube (725K+ Subscribers)",
+  "summary": "Proven IT Professional with experience of 9 + years in Software Development & Project Implementation and 6 + years and currently working as a  Lead Data Scientist Machine Learning & Deep Learning Developer. Possess widespread and progressive experience in the IT industry, focusing on business analysis, design, development, implementation and migration of large-scale, big budget business transformation projects. Impeccable knowledge for initiating applications with Algorithms, Data structures, Binary tree, Artificial Intelligence, Machine Learning, Deep Learning, Convolutional Neural Network, Recurrent Neural Network, and Software Development & Project Implementation.\nCurrently Spear Heading as a Technical Lead with Honeywell Technology Solution, Bangalore, India. Actively contributes in conducting expert business & systems analysis, identifying business improvements & information systems solutions, coordinating & scheduling projects, developing & monitoring project plans, and managing the end-to-end delivery of projects",
+  "country": "IN",
+  "country_full_name": "India",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "experiences": [
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 10,
+        "year": 2020
+      },
+      "ends_at": null,
+      "company": "iNeuron.ai",
+      "company_linkedin_profile_url": "https://in.linkedin.com/company/ineuron-ai",
+      "title": "Co-Founder",
+      "description": null,
+      "location": "Bengaluru, Karnataka, India",
+      "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/ineuron-ai/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230811%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230811T083214Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=d10a1102d9df6abe29201408d3077edb6b31608d5338a14ac63161c73e5a99cc"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 12,
+        "year": 2018
+      },
+      "ends_at": null,
+      "company": "YouTube",
+      "company_linkedin_profile_url": "https://in.linkedin.com/company/youtube",
+      "title": "Youtuber(700k+ subscribers)",
+      "description": null,
+      "location": "Bengaluru, Karnataka, India",
+      "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/youtube/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230811%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230811T083214Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=f45aea0ac588782ecdcfaae1c9ee3efc77eff820068a676e950faf5dd572282b"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 1,
+        "year": 2019
+      },
+      "ends_at": {
+        "day": 30,
+        "month": 9,
+        "year": 2020
+      },
+      "company": "Panasonic India",
+      "company_linkedin_profile_url": "https://in.linkedin.com/company/panasonicindia",
+      "title": "Lead Data Scientist",
+      "description": "Involved in Data Preprocessing Techniques for making the data useful for creating Machine\nLearning models\n\uf0c0 Owned and executed end to end multiple data science projects\n\uf0c0 Translate product requirements into analytical requiremnets/specification, design and develop\nrequired functionality.\n\uf0c0 Leveraged technology to automate daily operational activities.\n\uf0c0 Lead and mentor a team of students in my final year.\n\uf0c0 Involved in creating various regression and classification algorithms by using various sklearn\nlibraries such as Linear Regression,Decision Trees,Na\u00efve Baye\u2019s\n\uf0c0 Involved in creating Machine Learning models for test A/B content which is useful for making\nbetter decisions regarding the products\n\uf0c0 Also provided training within the college for Data Science, ML and Deep Learning.\n\uf0c0 Own a Youtube with 240k+ subscribers\n\uf0c0 Blogger for sharing Data Science related technolofies in Medium, TowardsData Science\n\uf0c0 Involved in designing the neural networks using Tensorflow for various internal projects within\nthe company such as automated chatbots using NLP\n            \n\n    \n    \n\n    \n        Show less",
+      "location": "Bangalore",
+      "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/panasonicindia/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230811%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230811T083214Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=3e9e411deabb705a2e1aff715800f099711a4bf02aa7e2360ddcb2086c0ca9af"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 9,
+        "year": 2018
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 1,
+        "year": 2019
+      },
+      "company": "EY",
+      "company_linkedin_profile_url": "https://in.linkedin.com/company/ernstandyoung",
+      "title": "Lead Data Scientist",
+      "description": null,
+      "location": "Bengaluru, Karnataka, India",
+      "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/ernstandyoung/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230811%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230811T083214Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=e47c36b2893d04e7c68e10c9f417ac043bfdb0c9ec30826dd22419c33062bf43"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 12,
+        "year": 2017
+      },
+      "ends_at": {
+        "day": 30,
+        "month": 9,
+        "year": 2018
+      },
+      "company": "Honeywell",
+      "company_linkedin_profile_url": "https://in.linkedin.com/company/honeywell",
+      "title": "Tech Lead",
+      "description": "\uf076\tAdroit in Python with libraries such as Sklearn, Numpy, Pandas, Matplotlib, Tableau for Data Visualization, Keras, Tensorflow ,C#,ASP.NET MVC, Sitecore CMS, Solr 5.5.1,MVC , SQL Server, AJAX,  XML & Microsoft Cognitive Services\n\uf076\tProficiently handled some internal projects using tools such as Tableau for data visualization and reporting the product owner\n\uf076\tDeft in managing all phases of the software development life-cycle (requirements, design, development, testing, release, support), utilizing multiple development methodologies, including design patterns, OOD, extreme programming, and structured programming\n\uf076\tProfessionally initiating Data Pre-processing Techniques for making the data useful for creating Machine Learning models\n\uf076\tImparts corporate training on Machine Learning and AI\n\uf076\tDeveloping & executing end to end multiple data science projects\n\uf076\tTranslating product requirements into analytical requirements/specification, design and development required functionality\n\uf076\tAwarded a book contract on python with Finance with deep Learning\n\n            \n\n    \n    \n\n    \n        Show less",
+      "location": "Bengaluru Area, India",
+      "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/honeywell/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230811%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230811T083214Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=9666a5952b7c802f69af57ded792918d05dbc2a321b8f3537f4f7a5f42df1472"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 4,
+        "year": 2014
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 12,
+        "year": 2017
+      },
+      "company": "Publicis Sapient",
+      "company_linkedin_profile_url": "https://in.linkedin.com/company/publicissapient",
+      "title": "Senior Associate",
+      "description": "Sitecore CMS,Machine Learning, ASP .net MVC ,Data Science,Python,Spark,Sklearn,Numpy,Seaborn,MAtplotLib",
+      "location": "Bangalore",
+      "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/publicissapient/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230811%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230811T083214Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=2b5ffbb1993f697a3146066656b0c8d40db353303304e5400956c427f7b44250"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 12,
+        "year": 2011
+      },
+      "ends_at": {
+        "day": 30,
+        "month": 4,
+        "year": 2014
+      },
+      "company": "HCL Technologies",
+      "company_linkedin_profile_url": "https://in.linkedin.com/company/hcltech",
+      "title": "Software Engineer",
+      "description": "\uf0c0\tDelivering and implementing the project as per scheduled milestones. Participating in Onsite deployment, customer support and product up-gradation.\n\uf0c0\tInteracting with the onshore team for requirements gathering, analysis, and implementations.\n\uf0c0\tStructural designing & coding of solution for developing new applications.\n\uf0c0\tDesigning, coding and validating forms; coding programs and finally integrating them.",
+      "location": "Noida Area, India",
+      "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/hcltech/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230811%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230811T083214Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=a346569bfa2d843b1df28d1014f13bc7b2bc15e10ec5e467071a7e3153c4540e"
+    }
+  ],
+  "education": [
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 1,
+        "year": 2007
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 12,
+        "year": 2011
+      },
+      "field_of_study": "Science",
+      "degree_name": "Bachelor of Engineering (BE)",
+      "school": "PDA College of Engineering",
+      "school_linkedin_profile_url": null,
+      "description": "Projects on android on Face detection",
+      "logo_url": null,
+      "grade": "9.24",
+      "activities_and_societies": "Cricket"
+    }
+  ],
+  "languages": [
+    "English",
+    "Hindi",
+    "Nepali",
+    "Kannada"
+  ],
+  "accomplishment_organisations": [],
+  "accomplishment_publications": [
+    {
+      "name": null,
+      "publisher": null,
+      "published_on": {
+        "day": 30,
+        "month": 3,
+        "year": 2019
+      },
+      "description": "Learn and implement quantitative finance using popular Python libraries like NumPy, pandas, and Keras Key Features Understand Python data structure fundamentals and work with time series data Use popular Python libraries including TensorFlow, Keras, and SciPy to deploy key concepts in quantitative finance Explore various Python programs and learn finance paradigms Book DescriptionPython is one of the most popular languages used for quantitative finance. With this book, you'll explore the key characteristics of Python for finance, solve problems in finance, and understand risk management. The book starts with major concepts and techniques related to quantitative finance, and an introduction to some key Python libraries\n            \n\n    \n    \n\n    \n        Show less",
+      "url": "https://www.amazon.in/gp/product/1789346371?pf_rd_p=f2b20090-067d-415f-953d-b8dcecc9109f&pf_rd_r=GXYVJ8XQBJ7N8B68R84Y"
+    }
+  ],
+  "accomplishment_honors_awards": [],
+  "accomplishment_patents": [],
+  "accomplishment_courses": [],
+  "accomplishment_projects": [],
+  "accomplishment_test_scores": [],
+  "volunteer_work": [],
+  "certifications": [],
+  "connections": 500,
+  "people_also_viewed": [
+    {
+      "link": "https://in.linkedin.com/in/khushboo-singh-7b160519b",
+      "name": "Khushboo Singh",
+      "summary": "Data Scientist",
+      "location": "Bengaluru"
+    },
+    {
+      "link": "https://in.linkedin.com/in/ishansharma7390",
+      "name": "Ishan Sharma",
+      "summary": "Building Sentora & MarkitUp | YouTuber | BITS Goa | Helping Brands Grow on YouTube",
+      "location": "Bengaluru"
+    },
+    {
+      "link": "https://in.linkedin.com/in/ayush-singh488",
+      "name": "Ayush Singh",
+      "summary": "I help data science learners grab high paying job and first pay check | Experience at Replayed, ZenML, & Artifact",
+      "location": "Patna"
+    },
+    {
+      "link": "https://in.linkedin.com/in/shridhar-mankar",
+      "name": "Shridhar Mankar",
+      "summary": "A YouTuber (5 Minute Engineering 480k+ Subscribers) l Educational Blogger l Educator l Influencer Marketing Specialist l Podcaster l Vlogger",
+      "location": "Pune"
+    },
+    {
+      "link": "https://in.linkedin.com/in/-sudhanshu-kumar",
+      "name": "sudhanshu kumar",
+      "summary": "Founder  iNeuron.ai ,Acquired by Physics Wallah , Teacher who love to Discuss Technology.",
+      "location": "Bengaluru"
+    },
+    {
+      "link": "https://in.linkedin.com/in/bhatia-priya",
+      "name": "Priya Bhatia",
+      "summary": "Data Scientist | Mentor | YouTuber | Minimalist | M.Tech @ IIT",
+      "location": "Hyderabad"
+    },
+    {
+      "link": "https://in.linkedin.com/in/keertipurswani",
+      "name": "Keerti Purswani (She/Her)",
+      "summary": "Teacher | Courses at keertipurswanicourses.com | YouTuber (90K+ Subs) | Software Developer 2 | LinkedIn Top Voice 2022",
+      "location": "Bengaluru"
+    },
+    {
+      "link": "https://in.linkedin.com/in/hiteshchoudhary",
+      "name": "Hitesh Choudhary",
+      "summary": "Stepped into 35 countries and counting \ud83d\ude01",
+      "location": "Bengaluru"
+    },
+    {
+      "link": "https://www.linkedin.com/in/kenjee",
+      "name": "Ken Jee",
+      "summary": "Data Science | Sports Analytics |  Z by HP Global Data Science Ambassador",
+      "location": "Honolulu, HI"
+    },
+    {
+      "link": "https://in.linkedin.com/in/sunny-savita",
+      "name": "Sunny Savita",
+      "summary": "Senior Data Scientist at iNeuron.ai",
+      "location": "Bangalore Urban"
+    },
+    {
+      "link": "https://in.linkedin.com/in/akshaymarch7",
+      "name": "Akshay Saini \ud83d\ude80",
+      "summary": "Founder, NamasteDev | Teacher - YouTuber",
+      "location": "Dehradun"
+    },
+    {
+      "link": "https://in.linkedin.com/in/uday-mishra",
+      "name": "Uday Mishra",
+      "summary": "Chief Business Officer at iNeuron.ai, Ex ABB, Shell India, Oracle, Nike",
+      "location": "Bengaluru"
+    },
+    {
+      "link": "https://in.linkedin.com/in/chaharnishant11",
+      "name": "Nishant Chahar",
+      "summary": "SDE @ Microsoft  | 300k+ Subs on YT | Teacher | NSIT",
+      "location": "Delhi, India"
+    },
+    {
+      "link": "https://au.linkedin.com/in/stevenouri",
+      "name": "Steve Nouri",
+      "summary": "Generative AI Founder | Advisor @ Fortune 500 | 1MM+ Followers | Keynote Speaker | Top Voice DS & AI",
+      "location": "Sydney, NSW"
+    },
+    {
+      "link": "https://in.linkedin.com/in/dhattarwalaman",
+      "name": "AMAN DHATTARWAL",
+      "summary": "Founder of ApniKaksha & Apna College | 21 times TEDx Speaker | Learner & Physics Teacher | 80,00,000+ students \u2764\ufe0f | 102 times Guest Speaker |",
+      "location": "South Delhi"
+    },
+    {
+      "link": "https://www.linkedin.com/in/dhavalsays",
+      "name": "Dhaval Patel",
+      "summary": "Helping People Become AI Enabled Data Professionals \ud83d\udc49 codebasics.io | Youtuber - 800K+ Subscribers | Ex. Bloomberg, NVIDIA",
+      "location": "Princeton, NJ"
+    },
+    {
+      "link": "https://in.linkedin.com/in/bigdatabysumit",
+      "name": "Sumit Mittal",
+      "summary": "Founder & CEO of Trendytech | Big Data Trainer | Ex-Cisco | Ex-VMware | MCA @ NIT Trichy |  #SumitTeaches | New Batch for Ultimate Big Data Master's Program (Cloud Focused) starting on July 29th, 2023",
+      "location": "Bengaluru"
+    },
+    {
+      "link": "https://hk.linkedin.com/in/satyajitpattnaik",
+      "name": "Satyajit Pattnaik",
+      "summary": "Lead Data Consultant | Python, AI, ML, DL, Power BI, Tableau | Data Entrepreneur | Climate Fresk Facilitator | Teacher | Mentor | Youtuber - 35k subs | Udemy - 6k+ students | Taught 10000+ students globally \ud83d\udc68\u200d\ud83d\udcbb",
+      "location": "Hong Kong"
+    },
+    {
+      "link": "https://in.linkedin.com/in/subhralina-nayak",
+      "name": "Subhralina Nayak",
+      "summary": "Data Scientist | Machine Learning and Advanced Data Analytics | AI Product Development Lead",
+      "location": "Bhubaneswar"
+    },
+    {
+      "link": "https://in.linkedin.com/in/shailjamishra-",
+      "name": "SHAILJA MISHRA\ud83d\udfe2",
+      "summary": "Data and Applied Scientist at Microsoft | 100k+ LinkedIn | x Data Engineer at Fractal",
+      "location": "Bengaluru"
+    }
+  ],
+  "recommendations": [
+    "LinkedIn User\n\n      \n          \n          \n\n\n\n              \n                \n        \n              \n  \n\n      \n          I came across Krish while learning machine learning in YouTube. The grasps over the concepts he had in machine learning were truly amazing. Krish is very professional and detail-oriented. It was a great experience learning from him. "
+  ],
+  "activities": [
+    {
+      "title": "AI- ML/DL -  6 Steps towards a Successful Machine Learning Project:Steps for machine learning project.Project InitiationData ExplorationData\u2026",
+      "link": "https://www.linkedin.com/posts/srikanth-reddy-98196712_ai-mldl-6-steps-towards-a-successful-activity-7087437377752727552-3tvN",
+      "activity_status": "Liked by Krish Naik"
+    },
+    {
+      "title": "Join the world\u2019s top business minds and industry leaders at 2023\u2019s must-attend event for global corporations and fast-growth businesses to forge\u2026",
+      "link": "https://www.linkedin.com/posts/dubai-chambers_dubaibusinessforum-dbf2023-dubaichambers-activity-7087019257204490240-bEAV",
+      "activity_status": "Liked by Krish Naik"
+    },
+    {
+      "title": "I am on my way\ud83d\udef5 ....#datascientist #trending #career #datascience #engineeringmemes #coderlife",
+      "link": "https://www.linkedin.com/posts/ineuron-ai_datascientist-trending-career-activity-7087091347442024448-o4kg",
+      "activity_status": "Liked by Krish Naik"
+    },
+    {
+      "title": "Tech has undergone a remarkable evolution, pushing boundaries and reshaping industries. In a landscape where companies constantly challenge the\u2026",
+      "link": "https://www.linkedin.com/posts/physicswallah_upskilling-activity-7087090644019535873-HlNk",
+      "activity_status": "Liked by Krish Naik"
+    },
+    {
+      "title": "Hello, everyone!Making progress on #day3 of learning statistics. Today, I focused on two important topics:-Distributions and types-practical\u2026",
+      "link": "https://www.linkedin.com/posts/krithika-bongoni2003_day3-statisticslearning-dataanalysis-activity-7082792729394491392-N7Zw",
+      "activity_status": "Liked by Krish Naik"
+    },
+    {
+      "title": "Amazon Web Services (AWS)Jeevitha D SiNeuron.aiKrish Naik",
+      "link": "https://www.linkedin.com/posts/u-satish-0a6714178_amazon-web-services-aws-jeevitha-d-s-ineuronai-activity-7087026814367236096-gsRa",
+      "activity_status": "Liked by Krish Naik"
+    },
+    {
+      "title": "\ud83c\udf10 Demystifying Hadoop Architecture: Unraveling the Building Blocks of Big Data Processing (PART-1) \ud83d\ude80Are you fascinated by the world of Big Data\u2026",
+      "link": "https://www.linkedin.com/posts/omkar-more-b02178154_hadoop-bigdata-analytics-activity-7086978266271498240-jeU_",
+      "activity_status": "Liked by Krish Naik"
+    },
+    {
+      "title": "\ud83c\udf89 Exciting News! \ud83c\udf89I recently had the privilege of attending an incredible session on \"How to Set Up Your LinkedIn Profile to Crack Top Software\u2026",
+      "link": "https://www.linkedin.com/posts/mohd-rehbar-5535a5257_linkedin-collegewallah-grateful-activity-7086727495739150336-PmNJ",
+      "activity_status": "Liked by Krish Naik"
+    },
+    {
+      "title": "Pw Skills celebrating World Youth Skills DayLet's Understand the importance of upskilling from the CIO of PW skills Mr. Krish Naik where he also\u2026",
+      "link": "https://www.linkedin.com/posts/naikkrish_pw-skills-celebrating-world-youth-skills-activity-7086750252082368512-1eZF",
+      "activity_status": "Shared by Krish Naik"
+    },
+    {
+      "title": "PW Skills is celebrating World Youth Skills Day \ud83d\udcbbLet's Understand the importance of upskilling from the CEO of PW Skills sudhanshu kumar where he\u2026",
+      "link": "https://www.linkedin.com/posts/physicswallah_world-youth-skills-day-activity-7086012310435094528-rsWA",
+      "activity_status": "Liked by Krish Naik"
+    },
+    {
+      "title": "It was a wonderful night here at PW-Skills. We celebrated HR Meet- Empowering Talents for Tomorrow using AI. A big shout to all the industry leaders\u2026",
+      "link": "https://www.linkedin.com/posts/abhishek-mahajan-b2a611105_ineuron-pwskills-hrbusinesspartner-activity-7086734081715027970-0z2V",
+      "activity_status": "Liked by Krish Naik"
+    },
+    {
+      "title": "Thank you very much for today's lecturer. Hitesh Choudhary ,Vishwa Mohan ,Anurag Tiwari ,Sanket Singh,Krish Naik PW (PhysicsWallah) .",
+      "link": "https://www.linkedin.com/posts/anand-raj-bind-9b6890253_thank-you-very-much-for-todays-lecturer-activity-7086669784712380416-is5U",
+      "activity_status": "Liked by Krish Naik"
+    },
+    {
+      "title": "It was a wonderful night here at PW-Skills. We celebrated HR SAMAVAYA- Empowering Talents for Tomorrow using AI.A big shout to all the\u2026",
+      "link": "https://www.linkedin.com/posts/manoj-dahiya-connecting-opportunities-to-talent_ineuron-pwskills-hrbusinesspartner-activity-7086639177013821440-gbde",
+      "activity_status": "Liked by Krish Naik"
+    },
+    {
+      "title": "What a marvelous weekend it was. I want to extend my deepest appreciation to everyone who attended our HR Samavya Event.Throughout the evening, we\u2026",
+      "link": "https://www.linkedin.com/posts/uday-mishra_pwskills-jobfair-hr-activity-7086623123088814080-IXyN",
+      "activity_status": "Liked by Krish Naik"
+    },
+    {
+      "title": "#Day 13/100:#statistics Krish Naik  sudhanshu kumar Sunny Savita iNeuron.ai  Ashutosh Chauhan PW (PhysicsWallah) Alakh Pandey",
+      "link": "https://www.linkedin.com/posts/sanchit-kanojia-393023217_day-statistics-activity-7086365995958771712-ZAkb",
+      "activity_status": "Liked by Krish Naik"
+    }
+  ],
+  "similarly_named_profiles": [
+    {
+      "name": "Krish Naik",
+      "link": "https://in.linkedin.com/in/krish-naik-69358b220",
+      "summary": "Basic and Advanced Computer Skills, Certified in Data Entry, Communication Skills",
+      "location": "Dhanbad"
+    },
+    {
+      "name": "Krish Naik",
+      "link": "https://in.linkedin.com/in/krish-naik-8591ba1b9",
+      "summary": "--",
+      "location": "Supa"
+    },
+    {
+      "name": "Krish Naik",
+      "link": "https://in.linkedin.com/in/krish-naik-79b6a225a",
+      "summary": "Student at Goa Engineering College - Government of Goa",
+      "location": "Ponda"
+    },
+    {
+      "name": "Krish Naik",
+      "link": "https://in.linkedin.com/in/krish-naik-98869b1b8",
+      "summary": "Data entry excel at Freelancer",
+      "location": "Jaipur"
+    }
+  ],
+  "articles": [],
+  "groups": [],
+  "skills": [],
+  "inferred_salary": null,
+  "gender": null,
+  "birth_date": null,
+  "industry": null,
+  "extra": null,
+  "interests": [],
+  "personal_emails": [],
+  "personal_numbers": []
+}

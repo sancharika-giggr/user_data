@@ -1,0 +1,478 @@
+{
+  "public_identifier": "yogesh-nagar-16a564166",
+  "profile_pic_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/yogesh-nagar-16a564166/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230809%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230809T141853Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=e11942dc772d47c22cb4c492eabf3b40bd13597d9ff9f7baab9faae0f90752a9",
+  "background_cover_image_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/person/yogesh-nagar-16a564166/cover?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230809%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230809T141853Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=f3967c60f5c953986aec2928cfe09deaa066c7ceec2bc1d40f5d37d38ce44f46",
+  "first_name": "Yogesh",
+  "last_name": "Nagar",
+  "full_name": "Yogesh Nagar",
+  "follower_count": null,
+  "occupation": "Enterprise Data & Intelligent Automation Engineer at ANZ",
+  "headline": "Enterprise Data & Intelligent Automation Engineer at ANZ | IIT Bombay",
+  "summary": null,
+  "country": "IN",
+  "country_full_name": "India",
+  "city": "Mumbai",
+  "state": "Maharashtra",
+  "experiences": [
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 6,
+        "year": 2021
+      },
+      "ends_at": null,
+      "company": "ANZ",
+      "company_linkedin_profile_url": "https://www.linkedin.com/company/anz/",
+      "title": "Enterprise Data & Intelligent Automation Engineer",
+      "description": null,
+      "location": "Bangalore Urban, Karnataka, India",
+      "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/anz/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230809%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230809T141853Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=0f0fe7f28703a288ea0e5b292790c7b20b494ce986ce7a79dfa01c3ca8734573"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 7,
+        "year": 2020
+      },
+      "ends_at": {
+        "day": 30,
+        "month": 6,
+        "year": 2021
+      },
+      "company": "Placement Office, IIT Bombay",
+      "company_linkedin_profile_url": "https://www.linkedin.com/company/placementofficeiitbombay/",
+      "title": "Department Placement Coordinator",
+      "description": null,
+      "location": null,
+      "logo_url": "https://s3.us-west-000.backblazeb2.com/proxycurl/company/placementofficeiitbombay/profile?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=0004d7f56a0400b0000000001%2F20230809%2Fus-west-000%2Fs3%2Faws4_request&X-Amz-Date=20230809T141853Z&X-Amz-Expires=1800&X-Amz-SignedHeaders=host&X-Amz-Signature=0e25d29d6b0499ad786385339b14869113c148b653037529cde030d41fc0dd46"
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 7,
+        "year": 2020
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 5,
+        "year": 2021
+      },
+      "company": "Indian Institute of Technology, Bombay",
+      "company_linkedin_profile_url": null,
+      "title": "Teaching Assistant | Machine Learning",
+      "description": null,
+      "location": null,
+      "logo_url": "https://media-exp1.licdn.com/dms/image/C4D0BAQGmDoDCx_FYpA/company-logo_400_400/0/1660636305804?e=1672272000&v=beta&t=VQFhoLN8nQWQKBsJCXlaiTqm_wMhhX7jiBG9N8obe9k"
+    }
+  ],
+  "education": [
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 1,
+        "year": 2019
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 12,
+        "year": 2021
+      },
+      "field_of_study": "IEOR - Data Science",
+      "degree_name": "Master of Technology - MTech",
+      "school": "Indian Institute of Technology, Bombay",
+      "school_linkedin_profile_url": "https://in.linkedin.com/school/indian-institute-of-technology-bombay/",
+      "description": null,
+      "logo_url": "https://media-exp1.licdn.com/dms/image/C4D0BAQGmDoDCx_FYpA/company-logo_400_400/0/1660636305804?e=1672272000&v=beta&t=VQFhoLN8nQWQKBsJCXlaiTqm_wMhhX7jiBG9N8obe9k",
+      "grade": null,
+      "activities_and_societies": null
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 1,
+        "year": 2015
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 12,
+        "year": 2019
+      },
+      "field_of_study": null,
+      "degree_name": "Bachelor of Engineering",
+      "school": "Shri G S Institute of Technology & Science",
+      "school_linkedin_profile_url": "https://in.linkedin.com/school/shri-g-s-institute-of-technology-&-science/",
+      "description": null,
+      "logo_url": "https://media-exp1.licdn.com/dms/image/C4D0BAQEVWIaZwNjX1Q/company-logo_400_400/0/1519918817494?e=1672272000&v=beta&t=rHpaSUFTlkSBOMa6Iuk24MBTmqFvb4VpF1Nf11ty0ec",
+      "grade": null,
+      "activities_and_societies": null
+    }
+  ],
+  "languages": [],
+  "accomplishment_organisations": [],
+  "accomplishment_publications": [],
+  "accomplishment_honors_awards": [],
+  "accomplishment_patents": [],
+  "accomplishment_courses": [
+    {
+      "name": "AI for Medical Diagnosis",
+      "number": "-"
+    },
+    {
+      "name": "Data Analytics",
+      "number": "-"
+    },
+    {
+      "name": "Deep Learning",
+      "number": "-"
+    },
+    {
+      "name": "Machine Learning",
+      "number": "-"
+    },
+    {
+      "name": "Optimization Techniques",
+      "number": "-"
+    },
+    {
+      "name": "Reinforcement Learning",
+      "number": "-"
+    },
+    {
+      "name": "Speech and Natural Language Processing",
+      "number": "-"
+    },
+    {
+      "name": "Statistics for Management Research",
+      "number": "-"
+    },
+    {
+      "name": "Supply Chain Management",
+      "number": "-"
+    }
+  ],
+  "accomplishment_projects": [
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 7,
+        "year": 2020
+      },
+      "ends_at": null,
+      "title": "Deep Learning For Natural Language Processing",
+      "description": "Objective: Develop new deep neural network based tools for Indian Language Translation \n\u2022 Reviewed NLP pre-processing techniques like identifying stop words for a language and Word embedding Techniques like Continuous Bag of Word (CBOW), Skip Gram, Negative Sampling, Global Vector (GloVe), Count Vector, Term Frequency-Inverse Document Frequency (TF-IDF), Word Co-occurrence matrix with fixed context window\u2022 Implemented Word embedding techniques: Continuous Bag of Word(CBOW), Global Vector (GloVe) on Hindi Wikipedia dataset\n\u2022 Experimented with German to English language Machine Translation model using stacked LSTM \n   Encoder-Decoder architecture\n\u2022 Implementing language models BERT, ALBERT and XLNET for Hindi Language",
+      "url": null
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 7,
+        "year": 2020
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 12,
+        "year": 2020
+      },
+      "title": "Application Of Deep Learning In Medical Image Analysis",
+      "description": "\u2022 Implemented DenseNet which takes Chest X-ray image as input and outputs the probability of 14 thoracic diseases using Transfer Learning along with Heat Map on Chest X-ray showing the most affected area by disease using Class Activation Map\n\u2022 Reviewed Medical Report generation using Encoder-Decoder architecture using output from DenseNet architecture",
+      "url": null
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 1,
+        "year": 2020
+      },
+      "ends_at": {
+        "day": 30,
+        "month": 4,
+        "year": 2020
+      },
+      "title": "Credit Card Fraudulent Detection",
+      "description": "\u2022Implemented ML algorithm like Random Forest, Multilayer Neural Network, SVM, Logistic regression for the classification task\n\u2022 Performed EDA, Data Preprocessing (One hot Encoding) and Oversampling using SMOTE technique on the dataset\n\u2022 Obtained Best accuracy (0.9983) and F1 score (0.99)by Random Forest among all 4 classifiers after oversampling",
+      "url": null
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 1,
+        "year": 2020
+      },
+      "ends_at": {
+        "day": 30,
+        "month": 4,
+        "year": 2020
+      },
+      "title": "House Price Prediction Using Advanced  Regression Techniques",
+      "description": "\u2022 Performed EDA using correlation matrix for feature selection and Data Preprocessing\n\u2022 Implemented algorithms: Light gradient boosting, Extreme gradient boosting, Gradient boosting, Random forest Regressor, Elastic Net regression, and Lasso regression",
+      "url": null
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 1,
+        "year": 2020
+      },
+      "ends_at": {
+        "day": 30,
+        "month": 4,
+        "year": 2020
+      },
+      "title": "Movie Recommender System",
+      "description": "\u2022 Implemented collaborative filtering technique to recommend new movies to users on the basis watched movie ratings\n\u2022 Used cosine similarity& Pearson  correlation coefficient between movies to predict most appropriate new movies for users\n\u2022 Reviewed gradient descent based approach for movie recommendation by learning both weights and features during training",
+      "url": null
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 8,
+        "year": 2019
+      },
+      "ends_at": {
+        "day": 30,
+        "month": 11,
+        "year": 2019
+      },
+      "title": "Survey And  Statistical Analysis of IITB Mess Food Quality",
+      "description": "\u2022 Formed a questionnaire for response collection which served as source data for the entire experiment\n \u2022 Applied probabilistic sampling method to generate sample data and performed hypothesis testing on collected data\n \u2022 Generalizing the results for population by analyzing and applying statistical tests using various statistical and analytical tools",
+      "url": null
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 8,
+        "year": 2019
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 10,
+        "year": 2019
+      },
+      "title": "Bikes Rental Prediction Using Linear Regression From Scratch",
+      "description": "\u2022 Performed One Hot Encoding on categorical features to convert them to numerical features\n\u2022 Implemented Linear Regression without using ML libraries using MSE, RMSE & MAE as loss  \n\u2022 Compared result for MSE, RMSE and MAE loss functions using plot between loss vs. epoch",
+      "url": null
+    },
+    {
+      "starts_at": {
+        "day": 1,
+        "month": 9,
+        "year": 2019
+      },
+      "ends_at": {
+        "day": 31,
+        "month": 10,
+        "year": 2019
+      },
+      "title": "Digit Recognizer Using MNIST Dataset",
+      "description": "\u2022 Implemented Convolution Neural Network using Keras to recognize handwritten digits\n\u2022 Dropout is used to avoid overfitting and obtained accuracy score of 0.9874on validation set",
+      "url": null
+    }
+  ],
+  "accomplishment_test_scores": [],
+  "volunteer_work": [],
+  "certifications": [],
+  "connections": 500,
+  "people_also_viewed": [
+    {
+      "link": "https://in.linkedin.com/in/divkamra",
+      "name": "Divyanshi Kamra",
+      "summary": "Incoming Summer Software Intern at Google  | Institute Web and Coding Secretary, IIT Bombay  | IITB EE'24  | Mars Rover Technical Team | Aspire For Her",
+      "location": "Mumbai"
+    },
+    {
+      "link": "https://in.linkedin.com/in/luther-immanuel",
+      "name": "Luther Immanuel",
+      "summary": "Cloud Engineer at ANZ",
+      "location": "Mumbai"
+    },
+    {
+      "link": "https://in.linkedin.com/in/manav-bakshi-14346a15",
+      "name": "Manav Bakshi",
+      "summary": "Tribe Performance Lead Technology (Senior Vice President) Automation (DevOps) & Batch Tools at ANZ",
+      "location": "Bengaluru"
+    },
+    {
+      "link": "https://in.linkedin.com/in/sauravpathak4",
+      "name": "Saurav Pathak",
+      "summary": "Associate Data Scientist at Pristine Infotech, Inc. || IIT Bombay",
+      "location": "Mumbai"
+    },
+    {
+      "link": "https://in.linkedin.com/in/shivam-singh-iitb",
+      "name": "Shivam Singh",
+      "summary": "Engineer(EDG) at MathWorks | MTech, IIT Bombay | Deep Learning | Air 1 Gate EE'17",
+      "location": "Mumbai"
+    },
+    {
+      "link": "https://in.linkedin.com/in/nishasathish",
+      "name": "Nisha Sathish",
+      "summary": "Machine Learning Engineer at Dvara E-Dairy, IIT Bombay",
+      "location": "Bengaluru"
+    },
+    {
+      "link": "https://in.linkedin.com/in/sayan-chatterjee-792918171",
+      "name": "Sayan Chatterjee",
+      "summary": "Risk Analyst@ANZ | IIT Bombay",
+      "location": "Mumbai"
+    },
+    {
+      "link": "https://in.linkedin.com/in/salbani-chakrabortty-aa397b14b",
+      "name": "Salbani Chakrabortty",
+      "summary": "Data Analyst at ICICI Securities | IIT Bombay | IEOR",
+      "location": "Kolkata"
+    },
+    {
+      "link": "https://in.linkedin.com/in/chinmay-naik-910241146",
+      "name": "Chinmay Naik",
+      "summary": "IIT Bombay (M.Tech., IEOR) | IIT Indore (B.Tech., Mechanical) | ML | DL | NLP",
+      "location": "Thane"
+    },
+    {
+      "link": "https://in.linkedin.com/in/akashomer",
+      "name": "AKASH OMER",
+      "summary": "Sr Data Scientist at ICICI Lombard | Ex Data Labs HDFC Life | IIT Bombay",
+      "location": "Mumbai"
+    },
+    {
+      "link": "https://in.linkedin.com/in/mayank-maheshwari-2881a8ab",
+      "name": "Mayank Maheshwari",
+      "summary": "Data Scientist- Business Intelligence | IIT Bombay - Operations Research | NIT Surat",
+      "location": "Mumbai"
+    },
+    {
+      "link": "https://in.linkedin.com/in/mayankrdseth",
+      "name": "Mayank Seth",
+      "summary": "IIT Bombay | MTech | IEOR | DL | ML | Data Science",
+      "location": "Mumbai"
+    },
+    {
+      "link": "https://in.linkedin.com/in/ankush-kumar-singh-5b45b315a",
+      "name": "Ankush Kumar Singh",
+      "summary": "SDE at Standard Chartered GBS || Data Science Enthusiast|| IEOR, IITB",
+      "location": "Chennai"
+    },
+    {
+      "link": "https://in.linkedin.com/in/abhishekpanigrahi",
+      "name": "Abhishek Panigrahi",
+      "summary": "Data Science Analyst at Accenture",
+      "location": "Raurkela"
+    },
+    {
+      "link": "https://in.linkedin.com/in/anupamsinghj",
+      "name": "Anupam Singh",
+      "summary": "Manager, ERA @Standard Chartered | IEOR, IIT Bombay |",
+      "location": "Rewa"
+    },
+    {
+      "link": "https://in.linkedin.com/in/akash-saha-b820b149",
+      "name": "Akash Saha",
+      "summary": "Pursuing Ph.D. at IEOR, IIT Bombay",
+      "location": "Mumbai"
+    },
+    {
+      "link": "https://in.linkedin.com/in/nishant-mani-tripathi-58b4b887",
+      "name": "Nishant Mani Tripathi",
+      "summary": "Data Scientist| L&T Financial Service| IDFC FIRST BANK",
+      "location": "Mumbai"
+    },
+    {
+      "link": "https://in.linkedin.com/in/rahul-khankar-772000b3",
+      "name": "Rahul Khankar",
+      "summary": "Data Scientist at ICICI Lombard GIC. | IIT Bombay",
+      "location": "Mumbai"
+    },
+    {
+      "link": "https://in.linkedin.com/in/shaan10u",
+      "name": "Shantanu Jha",
+      "summary": "Axis Bank | IIT Bombay '21",
+      "location": "Visakhapatnam"
+    },
+    {
+      "link": "https://in.linkedin.com/in/abhishek-chaudhury-07422b191",
+      "name": "Abhishek Chaudhury",
+      "summary": "Operations Research student at IEOR, IIT Bombay",
+      "location": "Kolkata"
+    },
+    {
+      "link": "https://www.linkedin.com/in/sudhansu-srivastava-51a896117",
+      "name": "Sudhansu Srivastava",
+      "summary": "Data Engineer, Intelligent Automation | ANZ | IIT Bombay | IIT Bhubaneswar",
+      "location": null
+    },
+    {
+      "link": "https://www.linkedin.com/in/nilay-bhalgat-81542b19b",
+      "name": "Nilay Bhalgat",
+      "summary": "ANZ | IIT Bombay | MITCOE | Mechanical Engineer",
+      "location": null
+    },
+    {
+      "link": "https://www.linkedin.com/in/ritikaagrawal382",
+      "name": "Ritika Agrawal",
+      "summary": "ANZ | Epigamia | IIT Bombay '21",
+      "location": null
+    },
+    {
+      "link": "https://www.linkedin.com/in/jeevan-swaroop-dasari-52183848",
+      "name": "Jeevan Swaroop Dasari",
+      "summary": "Masters in Operations Research from IIT Bombay",
+      "location": null
+    },
+    {
+      "link": "https://www.linkedin.com/in/prajwal-maheshwari-6a54371b8",
+      "name": "Prajwal Maheshwari",
+      "summary": "Student at IIT Bombay",
+      "location": null
+    },
+    {
+      "link": "https://www.linkedin.com/in/harshit-yadav-0a2940211",
+      "name": "Harshit Yadav",
+      "summary": "IIT Bombay | Mtech. '23 | IEOR",
+      "location": null
+    },
+    {
+      "link": "https://www.linkedin.com/in/bikram-majumdar-546235166",
+      "name": "Bikram Majumdar",
+      "summary": "DHL | IIT BOMBAY | IEOR",
+      "location": null
+    }
+  ],
+  "recommendations": [],
+  "activities": [],
+  "similarly_named_profiles": [
+    {
+      "name": "Yogesh Nagar",
+      "link": "https://uk.linkedin.com/in/yogesh-nagar-83207a11",
+      "summary": "Software Engineer | IT Consultant | Digital Content Creator",
+      "location": "London"
+    },
+    {
+      "name": "Yogesh Nagar",
+      "link": "https://in.linkedin.com/in/yogesh-nagar-0738a444",
+      "summary": "Backup Engineer",
+      "location": "Faridabad"
+    },
+    {
+      "name": "Yogesh Nagar",
+      "link": "https://in.linkedin.com/in/yogesh-nagar-12aa14132",
+      "summary": "Sr. Executive Human Resources at Array Management Consultants",
+      "location": "Kota"
+    },
+    {
+      "name": "Yogesh Nagar",
+      "link": "https://in.linkedin.com/in/yogesh-nagar-460b0ba7",
+      "summary": "Bar Manager at Le Chef restaurant & bar",
+      "location": "Delhi, India"
+    }
+  ],
+  "articles": [],
+  "groups": [],
+  "skills": [],
+  "inferred_salary": null,
+  "gender": null,
+  "birth_date": null,
+  "industry": null,
+  "extra": null,
+  "interests": [],
+  "personal_emails": [],
+  "personal_numbers": []
+}
