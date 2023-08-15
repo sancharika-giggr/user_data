@@ -50,9 +50,9 @@ def api_handler(request):
                 json.dump(profile_data, json_file, indent=2)
         with open(file_path, 'r') as json_file:
             json_data = json.load(json_file)
-
+        e = [str(email), exist.email]
         # Access the 'full_name' attribute from the JSON data
-        print(file_path)
+        print(e)
         full_name = json_data['full_name']
 
         # Execute the Neo4j Cypher query
@@ -70,12 +70,12 @@ def api_handler(request):
             cypher_query = f'''
                 WITH '{file_path}' AS url
                 CALL apoc.load.json(url) YIELD value AS personData
-                MERGE (p:Person {{name: personData.full_name , unique_id: {u_id}}})
+                MERGE (p:Person {{name: personData.full_name ,  unique_id: '{str(u_id)}'}})
 SET p.country = personData.country,
 p.occupation = personData.occupation,
 p.city = personData.city,
-p.email = {email},
-p.phone = {phone},
+p.email = {e},
+p.phone = '{str(phone)}',
 p.gender = personData.gender,
 p.state = personData.state,
 p.follower_count = personData.follower_count,
@@ -332,7 +332,7 @@ MERGE (p)<-[:RECOMMENDED {{message: recommendationMessage}}]-(personB)
                 df2.at[index_to_update, "activities"] = activities
             interests = df2[df2["name"] == full_name]["activities"].values[0]
             interests.append(df2[df2["name"] == full_name]["interest"].values[0])
-            openai.api_key = "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"
+            openai.api_key = os.environ["OPENAI_API_KEY"]
             message = [{"role": "user", "content": f"""{interests}
             as per this sentence find all the categories that this user might be interested in and also show the 
             keywords based on which it is categorised in a format->
