@@ -1,3 +1,0 @@
-os.environ["OPENAI_API_KEY"] = "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"
-export OPENAI_API_KEY='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'
-echo $OPENAI_API_KEY
