@@ -40,7 +40,7 @@ def api_handler(request):
             profile.save()
             print("name: " + profile.name)
             api_endpoint = 'https://nubela.co/proxycurl/api/v2/linkedin'
-            api_key = 'dgeE7JPMejOZDilJvwePFQ'
+            api_key = 'PkumOmjgp9b9Q9c0QZwazA'
             header_dic = {'Authorization': 'Bearer ' + api_key}
 
             response = requests.get(api_endpoint, params={'url': link}, headers=header_dic)
