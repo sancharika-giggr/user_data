@@ -40,7 +40,7 @@ def api_handler(request):
             profile.save()
             print("name: " + profile.name)
             api_endpoint = 'https://nubela.co/proxycurl/api/v2/linkedin'
-            api_key = 'PkumOmjgp9b9Q9c0QZwazA'
+            api_key = os.environ.get('PROXY_API_KEY')
             header_dic = {'Authorization': 'Bearer ' + api_key}
 
             response = requests.get(api_endpoint, params={'url': link}, headers=header_dic)
@@ -332,7 +332,7 @@ MERGE (p)<-[:RECOMMENDED {{message: recommendationMessage}}]-(personB)
                 df2.at[index_to_update, "activities"] = activities
             interests = df2[df2["name"] == full_name]["activities"].values[0]
             interests.append(df2[df2["name"] == full_name]["interest"].values[0])
-            openai.api_key = os.environ["OPENAI_API_KEY"]
+            openai.api_key = os.environ.get('OPENAI_API_KEY')
             message = [{"role": "user", "content": f"""{interests}
             as per this sentence find all the categories that this user might be interested in and also show the 
             keywords based on which it is categorised in a format->
