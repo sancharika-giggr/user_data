@@ -56,12 +56,9 @@ def api_handler(request):
         full_name = json_data['full_name']
 
         # Execute the Neo4j Cypher query
-        uri = "bolt://localhost:7687/neo4j"
-        username = "neo4j"
-        password = "sancharika"
-
         try:
-            driver = GraphDatabase.driver(uri=uri, auth=(username, password))
+            driver = GraphDatabase.driver(uri="neo4j+s://7054f19c.databases.neo4j.io",
+                                          auth=("neo4j", "p85x87XAhdCvO5T9G7ya84ePGuRvnJRpYqlSMKEgHzw"))
             session = driver.session()
 
             # q = f'''match (n) detach delete n'''
@@ -353,12 +350,6 @@ and so on
             )
             keywords_string = response.choices[0].message['content']
             keywords_list = keywords_string.split('\n')
-            # try:
-            #     lines = [line.strip() for line in lines if line.strip()]
-            # except Exception as e:
-            #     str(e)
-            #     lines = [keyword.strip().lstrip('- ') for keyword in lines if keyword.strip()]
-
             result_dict = convert_to_dict_of_lists(keywords_list)
 
             print(keywords_list)
