@@ -34,3 +34,7 @@ def convert_to_dict_of_lists(input_list):
 
     return result_dict
 
+
+def run_query(tx, query, input_dict):
+    result = tx.run(query, input_dict=input_dict)
+    return result.single()[0]

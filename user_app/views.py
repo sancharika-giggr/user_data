@@ -9,7 +9,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from neo4j import GraphDatabase
 from .models import Profile, UserAgentLog
-from .service import get_geo_location, convert_to_dict_of_lists
+from .service import get_geo_location, convert_to_dict_of_lists, run_query
 import platform
 
 
@@ -52,7 +52,7 @@ def api_handler(request):
             json_data = json.load(json_file)
         e = [str(email), exist.email]
         # Access the 'full_name' attribute from the JSON data
-        print(e)
+        print(json_data)
         full_name = json_data['full_name']
 
         # Execute the Neo4j Cypher query
@@ -65,8 +65,7 @@ def api_handler(request):
             # session.run(q)
 
             cypher_query = f'''
-                WITH '{file_path}' AS url
-                CALL apoc.load.json(url) YIELD value AS personData
+                WITH $input_dict AS personData 
                 MERGE (p:Person {{name: personData.full_name ,  unique_id: '{str(u_id)}'}})
 SET p.country = personData.country,
 p.occupation = personData.occupation,
@@ -291,10 +290,11 @@ MERGE (personB:Person {{name: recommenderName}})
 
 // Create the RECOMMENDED relationship from Person A to Person B with the recommendation message
 MERGE (p)<-[:RECOMMENDED {{message: recommendationMessage}}]-(personB)
-
+RETURN p
             '''
-            # cypher_query = cypher_query.replace('\n', '')
-            session.run(cypher_query)
+            result_dict = session.write_transaction(run_query, cypher_query, json_data)
+            print(result_dict)
+            # session.run(cypher_query)
             q1 = f'''
                  MATCH (n:Person) RETURN n
                 '''
