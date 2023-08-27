@@ -22,21 +22,57 @@ def api_handler(request):
         u_id = data.get('unique_id')
         phone = data.get('phone')
         email = data.get('email')
-        # blog_categories = data.get('category')
-
-        # Save the name and link to the database
-        pr = Profile.objects.all()
-        pro = [p.name for p in pr]
-        print(pro)
+        # pr = Profile.objects.all()
+        # pro = [p.details for p in pr]
+        # print(pro)
         # Profile.objects.all().delete()
+        unique_details = []
         current_directory = os.getcwd()
-
-        # Combine the current directory with the 'data' folder name to get the path
         data_folder_path = os.path.join(current_directory, 'data')
         file_path = f"{data_folder_path}/profile_data_{name}.json"
-        exist = Profile.objects.filter(name=name).first()
-        if exist is None:
-            profile = Profile(name=name, link=link, u_id=u_id)
+        profile = Profile.objects.filter(name=name).first()
+
+        user_agent = request.META.get('HTTP_USER_AGENT', '')
+        add = request.META['REMOTE_ADDR']
+        r = request.META.get('HTTP_REFERER', 'Unknown')
+        lang = request.META.get('HTTP_ACCEPT_LANGUAGE', 'en')
+        path = request.path
+        f_path = request.get_full_path()
+        host = request.get_host()
+        ipv4_address = host.split(':')[0]
+        # "122.173.182.127"
+        geo_location_data = get_geo_location(add)
+        system_platform = platform.system()
+        ip, is_routable = get_client_ip(request)
+        data = {
+            "address": ip,
+            "referer": r,
+            "preferred_language": lang,
+            "path": path,
+            "full_path": f_path,
+            "host": host,
+            "user": user_agent,
+            "geo_location_data": geo_location_data,
+            "ipv4_address": ipv4_address,
+            "platform": system_platform
+        }
+        details = profile.get_details_list()
+        if len(details) < 1:
+            profile.details = [data]
+            profile.save()
+
+        for detail in details:
+            if detail != data:
+                unique_details.append(detail)
+
+        if data not in unique_details:
+            unique_details.append(data)
+
+        profile.details = unique_details
+        profile.save()
+
+        if profile is None:
+            profile = Profile(name=name, link=link, u_id=u_id, details=[data])
             profile.save()
             print("name: " + profile.name)
             api_endpoint = 'https://nubela.co/proxycurl/api/v2/linkedin'
@@ -50,11 +86,11 @@ def api_handler(request):
                 json.dump(profile_data, json_file, indent=2)
         with open(file_path, 'r') as json_file:
             json_data = json.load(json_file)
-        e = [str(email), exist.email]
-        # Access the 'full_name' attribute from the JSON data
+        e = [str(email), profile.email]
+        details = profile.get_details_list()
         print(json_data)
+        print(details)
         full_name = json_data['full_name']
-
         # Execute the Neo4j Cypher query
         try:
             driver = GraphDatabase.driver(uri="neo4j+s://7054f19c.databases.neo4j.io",
@@ -85,7 +121,8 @@ p.personal_emails = personData.personal_emails,
 p.personal_numbers = personData.personal_numbers,
 p.github_profile_id = personData.extra.github_profile_id,
 p.facebook_profile_id = personData.extra.facebook_profile_id,
-p.twitter_profile_id = personData.extra.twitter_profile_id
+p.twitter_profile_id = personData.extra.twitter_profile_id,
+p.meta_data = {details}
 
 //language known
 FOREACH (lang IN personData.languages |
@@ -362,51 +399,78 @@ and so on
     return JsonResponse({'error': 'Invalid request method.'})
 
 
+@csrf_exempt
 def my_view(request):
+    data = json.loads(request.body)
+    name = data.get('name')
     user_agent = request.META.get('HTTP_USER_AGENT', '')
-
-    # Save the user agent data to the database
-    us = UserAgentLog.objects.create(user_agent=user_agent)
     add = request.META['REMOTE_ADDR']
     r = request.META.get('HTTP_REFERER', 'Unknown')
     lang = request.META.get('HTTP_ACCEPT_LANGUAGE', 'en')
-    c = request.COOKIES.get('cookie_name', 'default_value')
-    ses = request.session
+    # c = request.COOKIES.get('cookie_name', 'default_value')
+    # ses = request.session
     path = request.path
     f_path = request.get_full_path()
     host = request.get_host()
-    session_data = json.dumps(dict(ses))
+    # session_data = json.dumps(dict(ses))
     # Extract the IPv4 address from the hostname (assuming IPv4 addresses are used)
     ipv4_address = host.split(':')[0]
-    geo_location_data = get_geo_location("122.173.182.127")
+    # "122.173.182.127"
+    geo_location_data = get_geo_location(add)
 
     # Get the system platform
     system_platform = platform.system()
-
-    print("System Platform:", system_platform)
-
     ip, is_routable = get_client_ip(request)
-    print(ip, is_routable)
     data = {
-        "address": add,
+        "address": ip,
         "referer": r,
         "preferred_language": lang,
-        "cookie": c,
-        "session": session_data,
+        # "cookie": c,
+        # "session": session_data,
         "path": path,
         "full_path": f_path,
         "host": host,
-        "time": us.timestamp,
-        "user": us.user_agent,
+        "user": user_agent,
         "geo_location_data": geo_location_data,
         "ipv4_address": ipv4_address,
         "platform": system_platform
     }
-    print(data)
+    # UserAgentLog.objects.all().delete()
+    # print(data)
+    # Save the user agent data to the database
+    unique_dicts = []
+    seen_json_strings = set()
+
+    try:
+        # Check if the user exists in the database
+        user_log = UserAgentLog.objects.get(name=name)
+        details = user_log.get_details_list()
+        # print(details)
+        # Check if the details are different, update if necessary
+        unique_details = []
+
+        for detail in details:
+            if detail != data:
+                unique_details.append(detail)
+
+        if data not in unique_details:
+            unique_details.append(data)
+
+        user_log.details = unique_details
+        user_log.save()
+        details = user_log.get_details_list()
+
+    except UserAgentLog.DoesNotExist:
+        user_log = UserAgentLog.objects.create(
+            name=name,
+            details=[data]
+        )
+        details = user_log.get_details_list()
+
     # user = UserAgentLog.objects.all()
     # u = [{"time": us.timestamp,
     #       "user": us.user_agent} for us in user]
     # print(u)
 
     return JsonResponse({"message": "Hello, user!",
-                         "details": data})
+                         "details": details})
