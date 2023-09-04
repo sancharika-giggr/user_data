@@ -27,6 +27,7 @@ def api_handler(request):
         # print(pro)
         # Profile.objects.all().delete()
         unique_details = []
+        meta_data = []
         current_directory = os.getcwd()
         data_folder_path = os.path.join(current_directory, 'data')
         file_path = f"{data_folder_path}/profile_data_{name}.json"
@@ -88,41 +89,49 @@ def api_handler(request):
             json_data = json.load(json_file)
         e = [str(email), profile.email]
         details = profile.get_details_list()
-        print(json_data)
-        print(details)
+        for data in details:
+            json_dump = json.dumps(data, indent=2)
+            meta_data.append(json_dump)
+        # print(type(e))
         full_name = json_data['full_name']
         # Execute the Neo4j Cypher query
         try:
-            driver = GraphDatabase.driver(uri="neo4j+s://7054f19c.databases.neo4j.io",
-                                          auth=("neo4j", "p85x87XAhdCvO5T9G7ya84ePGuRvnJRpYqlSMKEgHzw"))
-            session = driver.session()
+            # driver = GraphDatabase.driver(uri="neo4j+s://7054f19c.databases.neo4j.io",
+            #                               auth=("neo4j", "p85x87XAhdCvO5T9G7ya84ePGuRvnJRpYqlSMKEgHzw"))
+            driver = GraphDatabase.driver(uri="bolt://localhost:7687/giggr",
+                                          auth=("neo4j", "sancharika"))
 
-            # q = f'''match (n) detach delete n'''
-            # session.run(q)
+            session = driver.session()
 
             cypher_query = f'''
                 WITH $input_dict AS personData 
                 MERGE (p:Person {{name: personData.full_name ,  unique_id: '{str(u_id)}'}})
-SET p.country = personData.country,
-p.occupation = personData.occupation,
-p.city = personData.city,
-p.email = {e},
-p.phone = '{str(phone)}',
-p.gender = personData.gender,
-p.state = personData.state,
-p.follower_count = personData.follower_count,
-p.summary = personData.summary,
-p.profile_pic_url = personData.profile_pic_url,
-p.headline = personData.headline,
-p.linkedin_profile_url = 'https://www.linkedin.com/in/' + personData.public_identifier,
-p.languages = personData.languages,
-p.connections = personData.connections,
-p.personal_emails = personData.personal_emails,
-p.personal_numbers = personData.personal_numbers,
-p.github_profile_id = personData.extra.github_profile_id,
-p.facebook_profile_id = personData.extra.facebook_profile_id,
-p.twitter_profile_id = personData.extra.twitter_profile_id,
-p.meta_data = {details}
+SET p.occupation = personData.occupation,
+    p.email = {e},
+    p.phone = '{str(phone)}',
+    p.follower_count = personData.follower_count,
+    p.summary = personData.summary,
+    p.profile_pic_url = personData.profile_pic_url,
+    p.headline = personData.headline,
+    p.linkedin_profile_url = 'https://www.linkedin.com/in/' + personData.public_identifier,
+    p.connections = personData.connections,
+    p.personal_emails = personData.personal_emails,
+    p.personal_numbers = personData.personal_numbers,
+    p.github_profile_id = personData.extra.github_profile_id,
+    p.facebook_profile_id = personData.extra.facebook_profile_id,
+    p.twitter_profile_id = personData.extra.twitter_profile_id,
+    p.meta_data = {meta_data}
+
+//demography
+MERGE (d:DEMOGRAPHY {{name: 'Demography '+ personData.full_name}})
+SET d.country = personData.country,
+    d.occupation = personData.occupation,
+    d.city = personData.city,
+    d.gender = personData.gender,
+    d.state = personData.state,
+    d.languages = personData.languages
+
+MERGE (p)-[:DEMOGRAPHY]->(d)
 
 //language known
 FOREACH (lang IN personData.languages |
@@ -331,7 +340,12 @@ RETURN p
             '''
             result_dict = session.write_transaction(run_query, cypher_query, json_data)
             print(result_dict)
-            # session.run(cypher_query)
+            # result = session.run(cypher_query)
+            # print(result)
+            q = f'''match (n) return n'''
+            r = session.run(q)
+            print(r.data())
+
             q1 = f'''
                  MATCH (n:Person) RETURN n
                 '''
@@ -343,7 +357,6 @@ RETURN p
             results2 = session.run(q2)
             data2 = results2.data()
             session.close()
-            print(data)
         except KeyError as e:
             return JsonResponse({'error': str(e)})
 
@@ -387,9 +400,8 @@ and so on
             )
             keywords_string = response.choices[0].message['content']
             keywords_list = keywords_string.split('\n')
-            result_dict = convert_to_dict_of_lists(keywords_list)
-
             print(keywords_list)
+            result_dict = convert_to_dict_of_lists(keywords_list)
             return JsonResponse({"interested_categories": result_dict})
 
         except KeyError as e:
@@ -438,8 +450,8 @@ def my_view(request):
     # UserAgentLog.objects.all().delete()
     # print(data)
     # Save the user agent data to the database
-    unique_dicts = []
-    seen_json_strings = set()
+    # unique_dicts = []
+    # seen_json_strings = set()
 
     try:
         # Check if the user exists in the database
