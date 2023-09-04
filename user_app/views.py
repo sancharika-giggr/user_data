@@ -96,10 +96,10 @@ def api_handler(request):
         full_name = json_data['full_name']
         # Execute the Neo4j Cypher query
         try:
-            # driver = GraphDatabase.driver(uri="neo4j+s://7054f19c.databases.neo4j.io",
-            #                               auth=("neo4j", "p85x87XAhdCvO5T9G7ya84ePGuRvnJRpYqlSMKEgHzw"))
-            driver = GraphDatabase.driver(uri="bolt://localhost:7687/giggr",
-                                          auth=("neo4j", "sancharika"))
+            driver = GraphDatabase.driver(uri="neo4j+s://7054f19c.databases.neo4j.io",
+                                          auth=("neo4j", "p85x87XAhdCvO5T9G7ya84ePGuRvnJRpYqlSMKEgHzw"))
+            # driver = GraphDatabase.driver(uri="bolt://localhost:7687/giggr",
+            #                               auth=("neo4j", "sancharika"))
 
             session = driver.session()
 
