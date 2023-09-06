@@ -9,7 +9,7 @@ from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from neo4j import GraphDatabase
 from .models import Profile, UserAgentLog
-from .service import get_geo_location, convert_to_dict_of_lists, run_query
+from .service import get_geo_location, convert_to_dict_of_lists, run_query, save_dict_in_neo4j
 import platform
 
 
@@ -96,10 +96,10 @@ def api_handler(request):
         full_name = json_data['full_name']
         # Execute the Neo4j Cypher query
         try:
-            driver = GraphDatabase.driver(uri="neo4j+s://7054f19c.databases.neo4j.io",
-                                          auth=("neo4j", "p85x87XAhdCvO5T9G7ya84ePGuRvnJRpYqlSMKEgHzw"))
-            # driver = GraphDatabase.driver(uri="bolt://localhost:7687/giggr",
-            #                               auth=("neo4j", "sancharika"))
+            # driver = GraphDatabase.driver(uri="neo4j+s://7054f19c.databases.neo4j.io",
+            #                               auth=("neo4j", "p85x87XAhdCvO5T9G7ya84ePGuRvnJRpYqlSMKEgHzw"))
+            driver = GraphDatabase.driver(uri="bolt://localhost:7687/neo4j",
+                                          auth=("neo4j", "sancharika"))
 
             session = driver.session()
 
@@ -123,26 +123,38 @@ SET p.occupation = personData.occupation,
     p.meta_data = {meta_data}
 
 //demography
-MERGE (d:DEMOGRAPHY {{name: 'Demography '+ personData.full_name}})
-SET d.country = personData.country,
-    d.occupation = personData.occupation,
-    d.city = personData.city,
-    d.gender = personData.gender,
-    d.state = personData.state,
-    d.languages = personData.languages
+MERGE (demography:Demography {{name: 'Demography '+personData.full_name}})
+SET
+  demography.country = personData.country,
+  demography.occupation = personData.occupation,
+  demography.city = personData.city,
+  demography.gender = personData.gender,
+  demography.state = personData.state,
+  demography.languages = personData.languages
 
-MERGE (p)-[:DEMOGRAPHY]->(d)
+MERGE (p)-[:HAS_DEMOGRAPHY]->(demography)
+
+//biography
+MERGE (bio:BIOGRAPHY {{name: 'Biography '+ personData.full_name}})
+MERGE (p)-[:HAS_BIOGRAPHY]->(bio)
+
+//Psychography
+MERGE (psy:PSYCHOGRAPHY {{name: 'Psychography '+ personData.full_name}})
+MERGE (p)-[:HAS_PSYCHOGRAPHY]->(psy)
 
 //language known
 FOREACH (lang IN personData.languages |
 MERGE (language:LANGUAGE {{name: lang}})
 MERGE (p)-[:KNOWN_LANGUAGES]->(language)
+MERGE (demography)-[:USER_DEMOGRAPHY]->(language)
 )
+
 
 //interests known
 FOREACH (interest IN personData.interests |
 MERGE (interests:Interests {{name: interest}})
 MERGE (p)-[:INTERESTS]->(interests)
+MERGE (psy)-[:USER_PSYCHOGRAPHY]->(interests)
 )
 
 // Create nodes for each test score and link them to the person node
@@ -153,6 +165,7 @@ day: scoreData.date_on.day}}),
 score.score = scoreData.score,
 score.description = scoreData.description
 MERGE (p)-[:ACHIEVED]->(score)
+MERGE (bio)-[:USER_BIOGRAPHY]->(score)
 )
 
 //VIEWED
@@ -172,6 +185,7 @@ day: awardData.issued_on.day}}),
 award.description = awardData.description,
 award.issuer = awardData.issuer
 MERGE (p)-[:RECEIVED_HONOR]->(award)
+MERGE (bio)-[:USER_BIOGRAPHY]->(award)
 )
 
 // Create education nodes and relationships
@@ -188,8 +202,8 @@ r.starts_at = datetime({{year: educationData.starts_at.year, month: educationDat
 day: educationData.starts_at.day}}),
 r.ends_at = CASE WHEN educationData.ends_at IS NOT NULL THEN datetime({{year: educationData.ends_at.year, 
 month: educationData.ends_at.month, day: educationData.ends_at.day}}) ELSE null END
+MERGE (demography)-[:USER_DEMOGRAPHY]->(e)
 )
-
 
 // Create experiences nodes and relationships
 FOREACH (experienceData IN personData.experiences |
@@ -202,6 +216,7 @@ w.starts_at = datetime({{year: experienceData.starts_at.year, month: experienceD
 day: experienceData.starts_at.day}}),
 w.ends_at = CASE WHEN experienceData.ends_at IS NOT NULL THEN datetime({{year: experienceData.ends_at.year, 
 month: experienceData.ends_at.month, day: experienceData.ends_at.day}}) ELSE null END
+MERGE (bio)-[:USER_BIOGRAPHY]->(company)
 )
 
 // Create volunteer_work nodes and relationships
@@ -216,6 +231,7 @@ v.starts_at = datetime({{year: volunteerData.starts_at.year,
 month: volunteerData.starts_at.month, day: volunteerData.starts_at.day}}),
 v.ends_at = CASE WHEN volunteerData.ends_at IS NOT NULL THEN datetime({{year: volunteerData.ends_at.year, 
 month: volunteerData.ends_at.month, day: volunteerData.ends_at.day}}) ELSE null END
+MERGE (psy)-[:USER_PSYCHOGRAPHY]->(volunteer)
 )
 
 // Create accomplishment_courses nodes and relationships
@@ -223,6 +239,7 @@ FOREACH (courses IN personData.accomplishment_courses |
 MERGE (course:Course {{name: courses.name}})
 ON CREATE SET course.number = courses.number
 MERGE (p)-[:COURSES_ATTENDED]->(course)
+MERGE (bio)-[:USER_BIOGRAPHY]->(course)
 )
 
 // Create accomplishment_publications nodes and relationships
@@ -236,6 +253,7 @@ publication.published_on = CASE WHEN publicationData.published_on IS NOT NULL TH
             year: publicationData.published_on.year, month: publicationData.published_on.month, 
             day: publicationData.published_on.day}}) ELSE null END
 MERGE (p)-[:PUBLISHED]->(publication)
+MERGE (bio)-[:USER_BIOGRAPHY]->(publication)
 )
 )
 
@@ -250,6 +268,7 @@ patent.issuer = patentData.issuer,
 patent.issued_on = CASE WHEN patentData.issued_on IS NOT NULL THEN datetime({{year: patentData.issued_on.year, 
 month: patentData.issued_on.month, day: patentData.issued_on.day}}) ELSE null END
 MERGE (p)-[:PATENT_ACCOMPLISHED]->(patent)
+MERGE (bio)-[:USER_BIOGRAPHY]->(patent)
 )
 )
 
@@ -263,7 +282,8 @@ article.image_url = articleData.image_url,
 article.published_date = CASE WHEN articleData.published_date IS NOT NULL THEN datetime(
 {{year: articleData.published_date.year, month: articleData.published_date.month, day: articleData.published_date.day}}) 
 ELSE null END
-MERGE (p)-[:PATENT_ACCOMPLISHED]->(patent)
+MERGE (p)-[:ARTICLE_ACCOMPLISHED]->(article)
+MERGE (bio)-[:USER_BIOGRAPHY]->(article)
 )
 )
 
@@ -274,6 +294,7 @@ MERGE (groups:Groups {{name: groupsData.name}})
 ON CREATE SET groups.profile_pic_url = groupsData.profile_pic_url,
 groups.url = groupsData.url
 MERGE (p)-[:JOINED_GROUP]->(groups)
+MERGE (psy)-[:USER_PSYCHOGRAPHY]->(groups)
 )
 )
 
@@ -290,6 +311,7 @@ certification.display_source = certificationData.display_source,
 certification.url = certificationData.url,
 certification.license_number = certificationData.license_number
 MERGE (p)-[:CERTIFICATION]->(certification)
+MERGE (bio)-[:USER_BIOGRAPHY]->(certification)
 )
 
 // Create activity_status nodes and relationships
@@ -297,6 +319,7 @@ FOREACH (activityData IN personData.activities |
 MERGE (activity:Activity {{link: activityData.link}})
 SET activity.title = activityData.title
 MERGE (p)-[:ACTIVITY {{status: split(activityData.activity_status, ' ')[0]}}]->(activity)
+MERGE (psy)-[:USER_PSYCHOGRAPHY]->(activity)
 )
 
 // Create accomplishment_organisations nodes and relationships
@@ -309,6 +332,7 @@ org.starts_at = datetime({{year: orgData.starts_at.year, month: orgData.starts_a
 org.ends_at = CASE WHEN orgData.ends_at IS NOT NULL THEN datetime({{year: orgData.ends_at.year, 
 month: orgData.ends_at.month, day: orgData.ends_at.day}}) ELSE null END
 MERGE (p)-[:ORGANISATION {{title: orgData.title}}]->(org)
+MERGE (psy)-[:USER_PSYCHOGRAPHY]->(org)
 )
 )
 
@@ -322,7 +346,9 @@ month: projectData.starts_at.month, day: projectData.starts_at.day}}),
 project.ends_at = CASE WHEN projectData.ends_at IS NOT NULL THEN datetime({{year: projectData.ends_at.year, 
 month: projectData.ends_at.month, day: projectData.ends_at.day}}) ELSE null END
 MERGE (p)-[:WORKED_ON]->(project)
+MERGE (bio)-[:USER_BIOGRAPHY]->(project)
 )
+
 //RECOMMENDATIONS
 WITH p, personData.recommendations AS recommendations
 UNWIND recommendations AS recommendation
@@ -342,9 +368,9 @@ RETURN p
             print(result_dict)
             # result = session.run(cypher_query)
             # print(result)
-            q = f'''match (n) return n'''
-            r = session.run(q)
-            print(r.data())
+            # q = f'''match (n) return n'''
+            # r = session.run(q)
+            # print(r.data())
 
             q1 = f'''
                  MATCH (n:Person) RETURN n
@@ -486,3 +512,109 @@ def my_view(request):
 
     return JsonResponse({"message": "Hello, user!",
                          "details": details})
+
+
+@csrf_exempt
+def linkedin_profile(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        name = data.get('name')
+        linkedin_link = "https://in.linkedin.com/in/"
+        # current_directory = os.getcwd()
+        # data_folder_path = os.path.join(current_directory, 'data')
+        # file_path = f"{data_folder_path}/profile_{name}.json"
+        # param = {'country': 'IN',
+        #          'first_name': f'{name}?',
+        #          }
+        # api_endpoint = 'https://nubela.co/proxycurl/api/search/person/'
+        # api_key = os.environ.get('PROXY_API_KEY')
+        # header_dic = {'Authorization': 'Bearer ' + api_key}
+        # a = 1
+        # if a>0:
+        #     response = requests.get(api_endpoint, params=param, headers=header_dic)
+        #     profile_data = response.json()
+        #
+        #     with open(file_path, "w") as json_file:
+        #         json.dump(profile_data, json_file, indent=2)
+        # with open(file_path, 'r') as json_file:
+        #     json_data = json.load(json_file)
+        # print(json_data)
+
+        name_parts = name.split()
+        usernames = [name.replace(" ", "").lower()]  # Initial username
+        name_parts.append(name_parts[-1] + name_parts[0])
+        name_parts.append(name_parts[1] + "-" + name_parts[0])
+        name_parts.append(name_parts[0] + "-" + name_parts[1])
+        for part in name_parts:
+            usernames.append(part.lower())  # Name parts as usernames
+
+            # Check for uniqueness and add a number if necessary
+        final_usernames = []
+        for username in usernames:
+            count = 0
+            if count == 0:
+                final_usernames.append(username)
+            else:
+                final_usernames.append(f"{username}{count}")
+        linkedin_usernames = [linkedin_link + username for username in final_usernames]
+
+        return JsonResponse({'Possible Profile Links': linkedin_usernames})
+
+
+@csrf_exempt
+def cdn(request):
+    # Define the lists of topics, subjects, and themes
+    data = json.loads(request.body)
+    interest = data.get('interest')
+    # topics = [key for key, values in interest["interested_categories"].items()]
+    subjects = ['Education', 'Environment', 'Health', 'Wealth', 'Technology', 'Mobility', 'Governance']
+    themes = ['rewire', 'renew', 'reorder']
+
+    categorized_topics = {}
+
+    # Iterate through subjects and themes to create the structure
+    for subject in subjects:
+        categorized_topics[subject] = {}
+        for theme in themes:
+            categorized_topics[subject][theme] = []
+
+    # Define your specific criteria for categorizing topics
+    criteria = {
+        'AI/ML/DL': {'subject': 'Technology', 'theme': 'rewire'},
+        'Data Science': {'subject': 'Technology', 'theme': 'renew'},
+        'Career Development': {'subject': 'Education', 'theme': 'renew'},
+        'Technology Evolution': {'subject': 'Technology', 'theme': 'reorder'},
+        'Business and Industry Events': {'subject': 'Technology', 'theme': 'reorder'},
+        'Web Services': {'subject': 'Technology', 'theme': 'rewire'},
+        'LinkedIn Profile Optimization': {'subject': 'Education', 'theme': 'rewire'},
+        'World Youth Skills': {'subject': 'Education', 'theme': 'reorder'},
+        'IT Industry': {'subject': 'Technology', 'theme': 'renew'}
+    }
+
+    # Categorize the topics based on your criteria
+    for topic, info in criteria.items():
+        subject = info['subject']
+        theme = info['theme']
+        categorized_topics[subject][theme].append(topic)
+
+    # Save the categorized topics in a dictionary
+    result_dict = categorized_topics
+
+    # Print the result dictionary (optional)
+    print(result_dict)
+    uri = "bolt://localhost:7687"
+    username = "neo4j"
+    password = "sancharika"
+    database_name = "giggr"  # Specify the desired database name here
+    save_dict_in_neo4j(uri, username, password, result_dict, database_name)
+    # Create a Neo4j driver instance with the specified database
+    driver = GraphDatabase.driver(uri, auth=(username, password), database=database_name)
+    session = driver.session()
+    q = f'''match (n) return n'''
+    r = session.run(q)
+    print(r.data())
+
+    return JsonResponse({"category": result_dict})
+
+
+
